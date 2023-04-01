@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment14"
+    android:background="@drawable/homebg">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/backbutton"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+
+        >
+
+    </ImageView>
+
+    <TextView
+
+        android:text="Heritage Site"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+        />
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="110dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:text="Le Morne Brabant"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="center"
+        android:textsize="70sp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@drawable/monument4"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="55dp"
+
+        >
+    </ImageView>
+
+
+    <TextView
+        android:text="Another hugely significant historical monument in Mauritius, Le Morne Brabant, the iconic mountain a short distance from the popular Le Morne Beach in the southwest of the island, was said to have been a safe haven for runaway slaves that had managed to escape their incarceration. It is said that they set up small communities and lived in caves until slavery was abolished when a very sad event took place here. The mountain today is seen as a symbol of hope and freedom and it has been named a UNESCO World Heritage site. You can hike the mountain with a guide or simply visit it, where the memorial at its foot gives some insight into the significance of this site."
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="center"
+        android:textsize="30sp"
+        android:layout_width="300dp"
+        android:layout_height="380dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+
+
+        />
+
+    <TextView
+        android:text=" Address: Le Morne, Mauritius"
+        android:layout_marginTop="630dp"
+        android:layout_marginLeft="50dp"
+        android:textAlignment="center"
+        android:textsize="30sp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+
+
+        />
+
+</FrameLayout>
