@@ -12,6 +12,66 @@
         android:theme="@style/Theme.MauHolidays"
         tools:targetApi="31">
         <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".inter19"
+            android:exported="false" />
+        <activity
+            android:name=".inter18"
+            android:exported="false" />
+        <activity
+            android:name=".inter17"
+            android:exported="false" />
+        <activity
+            android:name=".inter16"
+            android:exported="false" />
+        <activity
+            android:name=".inter15"
+            android:exported="false" />
+        <activity
+            android:name=".inter14"
+            android:exported="false" />
+        <activity
+            android:name=".inter13"
+            android:exported="false" />
+        <activity
+            android:name=".inter12"
+            android:exported="false" />
+        <activity
+            android:name=".inter11"
+            android:exported="false" />
+        <activity
+            android:name=".inter10"
+            android:exported="false" />
+        <activity
+            android:name=".inter9"
+            android:exported="false" />
+        <activity
+            android:name=".inter8"
+            android:exported="false" />
+        <activity
+            android:name=".inter7"
+            android:exported="false" />
+        <activity
+            android:name=".inter6"
+            android:exported="false" />
+        <activity
+            android:name=".inter5"
+            android:exported="false" />
+        <activity
+            android:name=".inter4"
+            android:exported="false" />
+        <activity
+            android:name=".inter3"
+            android:exported="false" />
+        <activity
+            android:name=".inter2"
+            android:exported="false" />
+        <activity
+            android:name=".inter1"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +80,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
