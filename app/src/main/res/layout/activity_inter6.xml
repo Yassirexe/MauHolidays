@@ -44,7 +44,6 @@
         android:layout_marginTop="210dp"
         android:layout_marginLeft="50dp"
         android:textAlignment="center"
-        android:textsize="30sp"
         android:layout_width="300dp"
         android:layout_height="120dp"
         android:textStyle="bold"
