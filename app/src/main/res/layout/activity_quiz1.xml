@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Interface1"
+    android:background="@drawable/homebg">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/backbutton"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+
+        >
+    </ImageView>
+
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="10dp"
+        android:text="Quiz"
+        android:textAlignment="center"
+        android:textSize="20sp"
+
+        />
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="110dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" />
+
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="35dp"
+        android:backgroundTint="@color/material_dynamic_primary50"
+        android:paddingTop="90dp"
+        android:textColor="@color/white"
+        android:text="History" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" />
+
+
+    <Button
+        android:id="@+id/monuments"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="225dp"
+        android:backgroundTint="@color/material_dynamic_primary50"
+        android:paddingTop="90dp"
+        android:textColor="@color/white"
+
+        android:text="Monuments" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" />
+
+
+    <Button
+        android:id="@+id/publicHolidays"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="35dp"
+        android:backgroundTint="@color/material_dynamic_primary50"
+        android:paddingTop="90dp"
+        android:textColor="@color/white"
+        android:text="Public Holidays" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" />
+
+
+    <Button
+        android:id="@+id/riddles"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="225dp"
+        android:backgroundTint="@color/material_dynamic_primary50"
+        android:paddingTop="90dp"
+        android:textColor="@color/white"
+
+        android:text="Riddles" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" />
+
+
+    <Button
+        android:id="@+id/slogans"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="130dp"
+        android:backgroundTint="@color/material_dynamic_primary50"
+        android:paddingTop="90dp"
+        android:textColor="@color/white"
+
+        android:text="Slogans" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" />
+
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="665dp"
+        android:layout_marginLeft="310dp"
+        android:backgroundTint="@color/material_dynamic_primary95"
+        android:textColor="@color/black"
+        android:text="Next" />
+
+
+
+
+</FrameLayout>
