@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inter15"
+    android:background="@drawable/homebg">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/backbutton"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+
+        >
+
+    </ImageView>
+
+    <TextView
+
+        android:text="Public Holidays 2023"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+        />
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="110dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:text="Date"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Day"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Holiday"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="01 Jan"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Sun"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="New Year's Day"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+
+    <TextView
+        android:text="02 Jan"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Mon"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="New Year Holiday"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="22 Jan"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Sun"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Chinese New Year"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="01 Feb"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Wed"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Abolition of Slavery*"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="04 Feb"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Sat"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Thaipoosam Cavadee"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="18 Feb"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Sat"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Maha Shivaratree"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="12 Mar"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Sat"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="National Day"
+        android:layout_marginTop="360dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="22 Mar"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Wed"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Ugadi"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="01 May"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Mon"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Labour Day"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="20 Sep"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Wed"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Ganesh Chaturthi"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="01 Nov"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Wed"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="All Saint's Day"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="02 Nov"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Thu"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Arrival of Indentured Labourers"
+        android:layout_marginTop="510dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+
+    <TextView
+        android:text="12 Nov"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Sun"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Divali"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+
+    <TextView
+        android:text="25 Dec"
+        android:layout_marginTop="590dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Mon"
+        android:layout_marginTop="590dp"
+        android:layout_marginLeft="175dp"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="Christmas Day"
+        android:layout_marginTop="590dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:text="*During the 16th and 19th centuries, Mauritius was one of the Indian Ocean countries that had a strategical role in slave trade.In 1835, slavery was abolished in the island.
+
+The Le Morne mountain is a symbol of resistance to slavery, since its impressive shape served as refuge for people that managed to run away from slavery."
+        android:layout_marginTop="625dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+
+
+
+
+
+
+
+</FrameLayout>

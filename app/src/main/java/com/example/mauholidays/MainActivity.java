@@ -2,21 +2,19 @@ package com.example.mauholidays;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    BottomNavigationView bottomNavigationView;
-
-    //initialise all menu pages
-    HomeFragment homeFragment = new HomeFragment();
-    FavouriteFragment favouriteFragment = new FavouriteFragment();
-    searchFragment searchFragment = new searchFragment();
-    profileFragment profileFragment = new profileFragment();
+    //declare variables
+    EditText username, password, repassword;
+    Button signup, signin;
+    DBHelper DB;
 
 
     @Override
@@ -24,36 +22,82 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        //initialise variables
+        username = (EditText) findViewById(R.id.username);
+        password = (EditText) findViewById(R.id.password);
+        repassword = (EditText) findViewById(R.id.repassword);
+        signup = (Button) findViewById(R.id.btnsignup);
+        signin = (Button) findViewById(R.id.btnsignin);
+        DB= new DBHelper(this);
 
-        //by default when opened it will open the home screen
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
+        //listeners for buttons
 
-        //when selected
-        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener(){
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(MenuItem item){
-                switch (item.getItemId()){
-                    case R.id.home:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
-                        return true;
-                    case R.id.favourite:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, favouriteFragment).commit();
-                        return true;
+            public void onClick(View v) {
 
-                    case R.id.search:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, searchFragment).commit();
-                        return true;
+                String user = username.getText().toString();
+                String pass = password.getText().toString();
+                String repass = repassword.getText().toString();
 
-                    case R.id.profile:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, profileFragment).commit();
-                        return true;
+                if (user.equals("") || pass.equals("") || repass.equals(""))
+                    Toast.makeText(MainActivity.this, "please fill all the fields", Toast.LENGTH_SHORT).show();
+                else{
+                    if (pass.equals(repass)){
+                        Boolean checkuser = DB.checkusername(user);
+                        if(checkuser == false){
+                            Boolean insert = DB.insertdata(user, pass);
+                            if(insert == true){
+                                Toast.makeText(MainActivity.this, "Registered successfully", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(getApplicationContext(), Home.class);
+                                startActivity(intent);
+                            }else {
+                                Toast.makeText(MainActivity.this, "Sign Up failed", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                        else {
+                            Toast.makeText(MainActivity.this, "User already found , Please Sign in", Toast.LENGTH_SHORT).show();
+                        }
+                    } else {
+                        Toast.makeText(MainActivity.this, "Password not matching", Toast.LENGTH_SHORT).show();
+                    }
                 }
-                return false;
             }
-
         });
 
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
