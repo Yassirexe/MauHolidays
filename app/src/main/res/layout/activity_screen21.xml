@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Interface2"
-    android:background="@drawable/homebg"
-    >
+    tools:context="screen21"
+    android:background="@drawable/homebg">
 
     <!-- TODO: Update blank fragment layout -->
+
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -16,11 +16,11 @@
         android:layout_marginStart="25dp"
 
         >
-    </ImageView>
 
+    </ImageView>
     <TextView
 
-        android:text="Discovery of Mauritius"
+        android:text="Monuments"
         android:layout_width="200dp"
         android:layout_height="70dp"
         android:layout_marginStart="100dp"
@@ -37,53 +37,58 @@
         android:layout_width="300dp"
         android:layout_height="1dp"
         android:background="@color/black"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="110dp"
         android:layout_gravity="center_horizontal"/>
 
 
     <TextView
-        android:text="The island had for a long time remained unknown and uninhabited.It was probably visited by Arab sailors during the Middle Ages, and on maps
-of about 1500, it is shown by an Arabic name `Dina Arobi'."
-        android:layout_marginTop="160dp"
+        android:text="Martello Tower Museum"
+        android:layout_marginTop="125dp"
         android:layout_marginStart="50dp"
         android:textAlignment="center"
-        android:layout_width="310dp"
-        android:layout_height="100dp"
-
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
 
         />
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:background="@drawable/discoveryofmauritius"
-        android:layout_marginTop="265dp"
-        android:layout_marginStart="55dp"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:background="@drawable/monument5"
+        android:layout_marginTop="165dp"
+        android:layout_marginStart="90dp"
 
         >
     </ImageView>
 
+
     <TextView
-        android:text="The Portuguese sailor Domingo Fernandez Pereira was probably the first European to land on the island at around 1511. The island appears with a Portuguese name `Cirne' on early Portuguese maps, probably because of the presence of the Dodo, a flightless bird which was found in great numbers at that time."
-        android:layout_marginTop="430dp"
+        android:text="Another hugely significant historical monument in Mauritius, Le Morne Brabant, the iconic mountain a short distance from the popular Le Morne Beach in the southwest of the island, was said to have been a safe haven for runaway slaves that had managed to escape their incarceration. It is said that they set up small communities and lived in caves until slavery was abolished when a very sad event took place here. The mountain today is seen as a symbol of hope and freedom and it has been named a UNESCO World Heritage site. You can hike the mountain with a guide or simply visit it, where the memorial at its foot gives some insight into the significance of this site."
+        android:layout_marginTop="350dp"
         android:layout_marginStart="50dp"
         android:textAlignment="center"
-        android:layout_width="310dp"
-        android:layout_height="120dp"
+        android:layout_width="300dp"
+        android:layout_height="380dp"
+
 
 
         />
 
     <TextView
-        android:text="It was another Portuguese sailor, Don Pedro Mascarenhas, who gave the name Mascarenes to the group of islands now known as Mauritius, Rodrigues and Reunion. The Portuguese did not stay long as they were not interested in these islands."
-        android:layout_marginTop="555dp"
+        android:text=" Address: La Preneuse, Black-River, Mauritius"
+        android:layout_marginTop="620dp"
         android:layout_marginStart="50dp"
         android:textAlignment="center"
-        android:layout_width="310dp"
-        android:layout_height="120dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
 
 
         />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -102,7 +107,6 @@ of about 1500, it is shown by an Arabic name `Dina Arobi'."
         android:backgroundTint="@color/material_dynamic_primary95"
         android:textColor="@color/black"
         android:text="Next" />
-
 
 
 

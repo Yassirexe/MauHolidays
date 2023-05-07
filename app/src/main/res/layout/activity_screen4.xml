@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Interface3"
+    tools:context="screen4"
     android:background="@drawable/homebg">
 
     <!-- TODO: Update blank fragment layout -->
@@ -17,65 +17,6 @@
 
         >
     </ImageView>
-
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <RadioButton android:id="@+id/option1"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:text="Mascarene islands"
-            android:onClick="onRadioButtonClicked"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="200dp"
-            android:textSize="15sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-
-            />
-
-        <RadioButton android:id="@+id/option2"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:onClick="onRadioButtonClicked"
-            android:text="Ile de France"
-            android:layout_marginStart="10dp"
-            android:textAlignment="viewStart"
-            android:textSize="15sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-
-
-            />
-
-
-        <RadioButton android:id="@+id/option3"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:text="St Brandon"
-            android:onClick="onRadioButtonClicked"
-            android:layout_marginStart="10dp"
-            android:textAlignment="viewStart"
-            android:textSize="15sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
-
-        <RadioButton android:id="@+id/option4"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:text="Dina Arobi"
-            android:onClick="onRadioButtonClicked"
-            android:layout_marginStart="10dp"
-            android:textAlignment="viewStart"
-            android:textSize="15sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-
-            />
-
-
-
-    </RadioGroup>
-
-
 
 
     <TextView
@@ -103,100 +44,11 @@
 
     <TextView
 
-        android:text="1.What name did the Arabs gave Mauritius when they came on the island?"
-        android:layout_width="400dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="150dp"
-        android:fontFamily="sans-serif-black"
-        android:paddingTop="10dp"
-        android:textAlignment="viewStart"
-        android:textSize="15sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-
-        />
-
-
-
-    <TextView
-
-        android:text="2. What is the name of the first Portuguese sailor?"
-        android:layout_width="400dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="300dp"
-        android:fontFamily="sans-serif-black"
-        android:paddingTop="10dp"
-        android:textAlignment="viewStart"
-        android:textSize="15sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-
-        />
-
-
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <RadioButton android:id="@+id/donpedro"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:text="Don Pedro"
-            android:onClick="onRadioButtonClicked"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="330dp"
-            android:textSize="15sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-
-            />
-
-        <RadioButton android:id="@+id/domingo"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:onClick="onRadioButtonClicked"
-            android:text="Domingo Fernandez Pereira"
-            android:layout_marginStart="10dp"
-            android:textAlignment="viewStart"
-            android:textSize="15sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-
-
-            />
-
-
-        <RadioButton android:id="@+id/bruno"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:text="Bruno Fernandes"
-            android:onClick="onRadioButtonClicked"
-            android:layout_marginStart="10dp"
-            android:textAlignment="viewStart"
-            android:textSize="15sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
-
-        <RadioButton android:id="@+id/pereira"
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:text="Don Pereira"
-            android:onClick="onRadioButtonClicked"
-            android:layout_marginStart="10dp"
-            android:textAlignment="viewStart"
-            android:textSize="15sp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-
-            />
-
-    </RadioGroup>
-
-
-    <TextView
-
         android:text="3. What name did the Portuguese give mauritius?"
         android:layout_width="400dp"
         android:layout_height="45dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="430dp"
+        android:layout_marginTop="150dp"
         android:fontFamily="sans-serif-black"
         android:paddingTop="10dp"
         android:textAlignment="viewStart"
@@ -216,7 +68,7 @@
             android:text="Cirne"
             android:onClick="onRadioButtonClicked"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="460dp"
+            android:layout_marginTop="190dp"
             android:textSize="15sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
 
@@ -224,7 +76,7 @@
 
         <RadioButton android:id="@+id/lapasse"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
+            android:layout_height="50dp"
             android:onClick="onRadioButtonClicked"
             android:text="Ile de la Passe"
             android:layout_marginStart="10dp"
@@ -238,7 +90,7 @@
 
         <RadioButton android:id="@+id/portugal"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
+            android:layout_height="50dp"
             android:text="Portugal"
             android:onClick="onRadioButtonClicked"
             android:layout_marginStart="10dp"
@@ -248,7 +100,7 @@
 
         <RadioButton android:id="@+id/rodrigues"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
+            android:layout_height="50dp"
             android:text="Rodrigues"
             android:onClick="onRadioButtonClicked"
             android:layout_marginStart="10dp"
@@ -267,7 +119,7 @@
         android:layout_width="400dp"
         android:layout_height="45dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="555dp"
+        android:layout_marginTop="360dp"
         android:fontFamily="sans-serif-black"
         android:paddingTop="10dp"
         android:textAlignment="viewStart"
@@ -283,11 +135,11 @@
         >
         <RadioButton android:id="@+id/kestrel"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
+            android:layout_height="50dp"
             android:text="Kestrel"
             android:onClick="onRadioButtonClicked"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="590dp"
+            android:layout_marginTop="400dp"
             android:textSize="15sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
 
@@ -295,7 +147,7 @@
 
         <RadioButton android:id="@+id/dodo"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
+            android:layout_height="50dp"
             android:onClick="onRadioButtonClicked"
             android:text="Dodo"
             android:layout_marginStart="10dp"
@@ -309,7 +161,7 @@
 
         <RadioButton android:id="@+id/parakeet"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
+            android:layout_height="50dp"
             android:text="Mauritius Parakeet"
             android:onClick="onRadioButtonClicked"
             android:layout_marginStart="10dp"
@@ -319,7 +171,7 @@
 
         <RadioButton android:id="@+id/pigeon"
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
+            android:layout_height="50dp"
             android:text="Pink Pigeon"
             android:onClick="onRadioButtonClicked"
             android:layout_marginStart="10dp"

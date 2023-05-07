@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Interface1"
+    tools:context=".screen1"
     android:background="@drawable/homebg">
 
     <!-- TODO: Update blank fragment layout -->
@@ -27,7 +27,7 @@
         android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-black"
         android:paddingTop="10dp"
-        android:text="Quiz"
+        android:text="Learn More"
         android:textAlignment="center"
         android:textSize="20sp"
 
@@ -53,12 +53,12 @@
         android:id="@+id/history"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="210dp"
         android:layout_marginStart="35dp"
         android:backgroundTint="@color/material_dynamic_primary50"
         android:paddingTop="90dp"
         android:textColor="@color/white"
-        android:text="History" />
+        android:text="Monuments" />
 
 
     <LinearLayout
@@ -73,13 +73,13 @@
         android:id="@+id/monuments"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="210dp"
         android:layout_marginStart="225dp"
         android:backgroundTint="@color/material_dynamic_primary50"
         android:paddingTop="90dp"
         android:textColor="@color/white"
 
-        android:text="Monuments" />
+        android:text="Public Holidays" />
 
 
 
@@ -95,12 +95,12 @@
         android:id="@+id/publicHolidays"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="330dp"
+        android:layout_marginTop="400dp"
         android:layout_marginStart="35dp"
         android:backgroundTint="@color/material_dynamic_primary50"
         android:paddingTop="90dp"
         android:textColor="@color/white"
-        android:text="Public Holidays" />
+        android:text="Riddles" />
 
 
     <LinearLayout
@@ -115,37 +115,13 @@
         android:id="@+id/riddles"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="330dp"
+        android:layout_marginTop="400dp"
         android:layout_marginStart="225dp"
         android:backgroundTint="@color/material_dynamic_primary50"
         android:paddingTop="90dp"
         android:textColor="@color/white"
 
-        android:text="Riddles" />
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:orientation="vertical" />
-
-
-    <Button
-        android:id="@+id/slogans"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="510dp"
-        android:layout_marginStart="130dp"
-        android:backgroundTint="@color/material_dynamic_primary50"
-        android:paddingTop="90dp"
-        android:textColor="@color/white"
-
         android:text="Slogans" />
-
-
 
 
 

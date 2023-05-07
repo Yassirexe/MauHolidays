@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="screen12"
+    android:background="@drawable/homebg">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/backbutton"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+
+        >
+    </ImageView>
+
+    <TextView
+
+        android:text="The French Period"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+        />
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="110dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+    <TextView
+
+        android:text="3. In which year did the Island start to develop effectively?"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="10dp"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+        />
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton android:id="@+id/A"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="1720"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="195dp"
+            android:textSize="15sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+            />
+
+        <RadioButton android:id="@+id/B"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="1730"
+            android:layout_marginStart="10dp"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+
+            />
+
+
+        <RadioButton android:id="@+id/C"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="1735"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginStart="10dp"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+        <RadioButton android:id="@+id/D"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="1740"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginStart="10dp"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+            />
+
+    </RadioGroup>
+
+
+    <TextView
+
+        android:text="4. What was the name of the French governor at that time?"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="400dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="10dp"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+        />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton android:id="@+id/labourdonnais"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Mahe de la Bourdonnais"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="440dp"
+            android:textSize="15sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+            />
+
+        <RadioButton android:id="@+id/pereira"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Mahe Pereira"
+            android:layout_marginStart="10dp"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+
+            />
+
+
+        <RadioButton android:id="@+id/don"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Mahe Don"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginStart="10dp"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+        <RadioButton android:id="@+id/fernandez"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Fernandez Pereira"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginStart="10dp"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+            />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" />
+
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginStart="310dp"
+        android:backgroundTint="@color/material_dynamic_primary95"
+        android:textColor="@color/black"
+        android:text="Next" />
+
+
+
+</FrameLayout>
