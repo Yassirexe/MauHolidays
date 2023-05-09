@@ -42,9 +42,9 @@
 
     <TextView
 
-        android:text="1.In which year did the Dutch land in Mauritius?"
+        android:text="1.In which year did the Dutch land on Mauritius?"
         android:layout_width="400dp"
-        android:layout_height="45dp"
+        android:layout_height="40dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="140dp"
         android:fontFamily="sans-serif-black"
@@ -66,7 +66,7 @@
             android:text="1968"
             android:onClick="onRadioButtonClicked"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="175dp"
+            android:layout_marginTop="185dp"
             android:textSize="15sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
 
@@ -117,7 +117,7 @@
         android:layout_width="400dp"
         android:layout_height="45dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="385dp"
+        android:layout_marginTop="395dp"
         android:fontFamily="sans-serif-black"
         android:paddingTop="10dp"
         android:textAlignment="viewStart"
@@ -137,7 +137,7 @@
             android:text="Mascarene Islands"
             android:onClick="onRadioButtonClicked"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="430dp"
+            android:layout_marginTop="440dp"
             android:textSize="15sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
 
@@ -182,14 +182,6 @@
     </RadioGroup>
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:orientation="vertical" />
-
-
     <Button
         android:id="@+id/nextButton"
         android:layout_width="80dp"
@@ -198,7 +190,10 @@
         android:layout_marginStart="310dp"
         android:backgroundTint="@color/material_dynamic_primary95"
         android:textColor="@color/black"
-        android:text="Next" />
+        android:text="Next"
+        android:textSize="15dp"
+        />
+
 
 
 

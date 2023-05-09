@@ -30,7 +30,7 @@
 
         android:text="Arrival of the Dutch"
         android:layout_width="200dp"
-        android:layout_height="70dp"
+        android:layout_height="45dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-black"
@@ -53,7 +53,7 @@
 
         android:text="5.  When did the Dutch leave Mauritius?"
         android:layout_width="400dp"
-        android:layout_height="45dp"
+        android:layout_height="40dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="135dp"
         android:fontFamily="sans-serif-black"
@@ -75,7 +75,7 @@
             android:text="1700"
             android:onClick="onRadioButtonClicked"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="170dp"
+            android:layout_marginTop="175dp"
             android:textSize="15sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
 
@@ -119,15 +119,6 @@
 
     </RadioGroup>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:orientation="vertical" />
-
-
     <Button
         android:id="@+id/nextButton"
         android:layout_width="80dp"
@@ -136,7 +127,9 @@
         android:layout_marginStart="310dp"
         android:backgroundTint="@color/material_dynamic_primary95"
         android:textColor="@color/black"
-        android:text="Next" />
+        android:text="Next"
+        android:textSize="15dp"
+        />
 
 
 

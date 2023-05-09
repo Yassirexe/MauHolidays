@@ -45,7 +45,7 @@
 
         android:text="5. Why did the Portuguese not stay for long on the island?"
         android:layout_width="400dp"
-        android:layout_height="45dp"
+        android:layout_height="40dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="150dp"
         android:fontFamily="sans-serif-black"
@@ -111,15 +111,6 @@
 
     </RadioGroup>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:orientation="vertical" />
-
-
     <Button
         android:id="@+id/nextButton"
         android:layout_width="80dp"
@@ -128,7 +119,9 @@
         android:layout_marginStart="310dp"
         android:backgroundTint="@color/material_dynamic_primary95"
         android:textColor="@color/black"
-        android:text="Next" />
+        android:text="Next"
+        android:textSize="15dp"
+        />
 
 
 

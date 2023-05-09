@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.mauholidays.Home;
-import com.example.mauholidays.R;
+//import com.example.mauholidays.Home;
+//import com.example.mauholidays.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -50,8 +50,8 @@ public class LoginActivity extends AppCompatActivity {
                     Boolean checkuserpass = DB.checkuserpassword(user, pass);
                     if(checkuserpass == true){
                         Toast.makeText(LoginActivity.this, "Sign In Successful", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(LoginActivity.this, Home.class);
-                        startActivity(intent);
+                      //  Intent intent = new Intent(LoginActivity.this, Home.class);
+                       // startActivity(intent);
                     }else{
                         Toast.makeText(LoginActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
                     }

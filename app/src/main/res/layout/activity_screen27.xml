@@ -43,53 +43,37 @@
 
     <ImageView
         android:layout_width="260dp"
-        android:layout_height="180dp"
-        android:background="@drawable/slogan7"
-        android:layout_marginTop="130dp"
-        android:layout_gravity="center_horizontal"
-
-        >
-
-    </ImageView>
-
-    <ImageView
-        android:layout_width="240dp"
         android:layout_height="190dp"
-        android:background="@drawable/slogan9"
-        android:layout_marginTop="325dp"
+        android:background="@drawable/slogan7"
+        android:layout_marginTop="170dp"
         android:layout_gravity="center_horizontal"
 
         >
+
     </ImageView>
 
     <ImageView
-        android:layout_width="230dp"
-        android:layout_height="180dp"
-        android:background="@drawable/slogan10"
-        android:layout_marginTop="530dp"
+        android:layout_width="250dp"
+        android:layout_height="190dp"
+        android:background="@drawable/slogan6"
+        android:layout_marginTop="395dp"
         android:layout_gravity="center_horizontal"
 
         >
     </ImageView>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:orientation="vertical" />
 
 
     <Button
         android:id="@+id/nextButton"
         android:layout_width="80dp"
         android:layout_height="55dp"
-        android:layout_marginTop="670dp"
-        android:layout_marginStart="315dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginStart="310dp"
         android:backgroundTint="@color/material_dynamic_primary95"
         android:textColor="@color/black"
-        android:text="Next" />
+        android:text="Next"
+        android:textSize="15dp"
+        />
 
 
 

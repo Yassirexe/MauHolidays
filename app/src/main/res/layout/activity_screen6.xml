@@ -22,7 +22,7 @@
 
         android:text="Arrival of the Dutch"
         android:layout_width="200dp"
-        android:layout_height="70dp"
+        android:layout_height="45dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-black"
@@ -40,11 +40,11 @@
 
     <TextView
         android:text="In 1598, a Dutch squadron, under the orders of Admiral Wybrand Van Warwyck, landed at Grand Port and named the island 'Mauritius', in honour of Prince Maurice Van Nassau, Stathouder of Holland."
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="130dp"
         android:layout_marginStart="50dp"
         android:textAlignment="center"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
 
 
         />
@@ -53,7 +53,7 @@
         android:layout_width="250dp"
         android:layout_height="180dp"
         android:background="@drawable/dutchperiod"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="225dp"
         android:layout_marginStart="75dp"
 
         >
@@ -61,33 +61,25 @@
 
     <TextView
         android:text="However, it was not until 1638 that there was a first attempt of Dutch settlement. It was from here that the famous Dutch navigator Tasman set out to discover the western part of Australia. The first Dutch settlement lasted only twenty years."
-        android:layout_marginTop="440dp"
+        android:layout_marginTop="430dp"
         android:layout_marginStart="50dp"
         android:textAlignment="center"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
+        android:layout_width="320dp"
+        android:layout_height="95dp"
 
 
         />
 
     <TextView
         android:text="Several attempts were subsequently made, but the settlements never developed enough to produce dividends and the Dutch finally left Mauritius in 1710. They are remembered for the introduction of sugar-cane, domestic animals and deer."
-        android:layout_marginTop="555dp"
+        android:layout_marginTop="530dp"
         android:layout_marginStart="50dp"
         android:textAlignment="center"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
 
 
         />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:orientation="vertical" />
 
 
     <Button
@@ -98,7 +90,9 @@
         android:layout_marginStart="310dp"
         android:backgroundTint="@color/material_dynamic_primary95"
         android:textColor="@color/black"
-        android:text="Next" />
+        android:text="Next"
+        android:textSize="15dp"
+        />
 
 
 

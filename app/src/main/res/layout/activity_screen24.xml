@@ -22,7 +22,7 @@
 
         android:text="Riddles and Proverbs"
         android:layout_width="200dp"
-        android:layout_height="70dp"
+        android:layout_height="45dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-black"
@@ -47,7 +47,7 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         >
 
     </TextView>
@@ -58,7 +58,7 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         >
 
     </TextView>
@@ -83,7 +83,7 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="25dp"
         >
 
     </TextView>
@@ -94,7 +94,7 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="25dp"
         >
 
     </TextView>
@@ -105,7 +105,7 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="25dp"
 
         >
 
@@ -117,7 +117,7 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="25dp"
 
         >
 
@@ -129,7 +129,7 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="25dp"
 
         >
 
@@ -140,7 +140,7 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="25dp"
 
         >
 
@@ -152,7 +152,7 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         >
 
     </TextView>
@@ -165,7 +165,7 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="25dp"
 
         >
 
@@ -177,7 +177,7 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="25dp"
 
         >
 
@@ -189,7 +189,7 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
 
         >
 
@@ -201,19 +201,20 @@
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
 
         >
 
     </TextView>
 
     <TextView
-        android:text=" Zafferes mouton napas safferes cabris.  "
+        android:text=" Zafferes mouton napas zafferes cabris.  "
         android:layout_marginTop="575dp"
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
-        android:layout_height="40dp"
+        android:layout_height="20dp"
+        android:textStyle="bold"
 
         >
 
@@ -221,7 +222,7 @@
 
     <TextView
         android:text=" Sheep business is not goats’ business - don’t dwell about what does not concern you.  "
-        android:layout_marginTop="595dp"
+        android:layout_marginTop="598dp"
         android:layout_marginStart="05dp"
         android:textAlignment="viewStart"
         android:layout_width="400dp"
@@ -230,15 +231,6 @@
         >
 
     </TextView>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:orientation="vertical" />
-
 
     <Button
         android:id="@+id/nextButton"
@@ -248,7 +240,9 @@
         android:layout_marginStart="310dp"
         android:backgroundTint="@color/material_dynamic_primary95"
         android:textColor="@color/black"
-        android:text="Next" />
+        android:text="Next"
+        android:textSize="15dp"
+        />
 
 
 

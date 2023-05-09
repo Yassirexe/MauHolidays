@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
                             Boolean insert = DB.insertdata(user, pass);
                             if(insert == true){
                                 Toast.makeText(MainActivity.this, "Registered successfully", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(getApplicationContext(), Home.class);
-                                startActivity(intent);
+                              //  Intent intent = new Intent(getApplicationContext(), Home.class);
+                              //  startActivity(intent);
                             }else {
                                 Toast.makeText(MainActivity.this, "Sign Up failed", Toast.LENGTH_SHORT).show();
                             }

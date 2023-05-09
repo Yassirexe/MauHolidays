@@ -22,7 +22,7 @@
 
         android:text="Monuments"
         android:layout_width="200dp"
-        android:layout_height="70dp"
+        android:layout_height="45dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-black"
@@ -63,13 +63,13 @@
 
 
     <TextView
-        android:text="This military building, which also goes by the name Fort Adelaide, was built in the 19th century by the British to protect the British Army. It was interestingly constructed in a Moorish style and is a hugely popular site today given its unbelievable panoramic views of Port Louis and the harbour. You will get many souvenir shops nearby which once served as barracks of the fort. Also known as the Adelaide Fort and it was named after the wife of William II when the British held land in Port Louis. This ancient and iconic fort provides you with stunning views of the harbour and the entire city of Port Louis. Now the fort has been converted into a National monument of Mauritius. Surrounding the fort is also the Caudan Waterfront and the vast Indian Ocean. Fort Citadel remains a popular tourist destination and it provides stunning views of the city.
+        android:text="This military building, which also goes by the name Fort Adelaide, was built in the 19th century by the British to protect the British Army. It was interestingly constructed in a Moorish style and is a hugely popular site today given its unbelievable panoramic views of Port Louis and the harbour. You will get many souvenir shops nearby which once served as barracks of the fort.It was named after the wife of William II when the British held land in Port Louis. Now the fort has been converted into a National monument of Mauritius. Surrounding the fort is also the Caudan Waterfront and the vast Indian Ocean. Fort Citadel remains a popular tourist destination and it provides stunning views of the city.
 "
         android:layout_marginTop="320dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="40dp"
         android:textAlignment="center"
-        android:layout_width="320dp"
-        android:layout_height="380dp"
+        android:layout_width="350dp"
+        android:layout_height="240dp"
 
 
 
@@ -77,24 +77,15 @@
 
     <TextView
         android:text=" Address: Citadel Fort, Port-Louis, Mauritius"
-        android:layout_marginTop="625dp"
+        android:layout_marginTop="585dp"
         android:layout_marginStart="50dp"
         android:textAlignment="center"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:textStyle="bold"
         android:fontFamily="sans-serif-black"
 
         />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:orientation="vertical" />
-
 
     <Button
         android:id="@+id/nextButton"
@@ -104,7 +95,10 @@
         android:layout_marginStart="310dp"
         android:backgroundTint="@color/material_dynamic_primary95"
         android:textColor="@color/black"
-        android:text="Next" />
+        android:text="Next"
+        android:textSize="15dp"
+        />
+
 
 
 
