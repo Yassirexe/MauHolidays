@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "586134479936",
+    "project_id": "mobileapptourist",
+    "storage_bucket": "mobileapptourist.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586134479936:android:2bf1a0ae6d23920825aba5",
+        "android_client_info": {
+          "package_name": "com.example.mauholidays"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586134479936-u4pmn4qo6n13rhdfj799b0tbg99p11p1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASqPuNWlhUgqkl5eKztO8Gu72QHp2j6fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586134479936-u4pmn4qo6n13rhdfj799b0tbg99p11p1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
