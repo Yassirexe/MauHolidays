@@ -12,6 +12,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     //name of database that will be created on device itself
     public static final String DBNAME = "Login.db";
+    public String username1 = "";
 
     public DBHelper(Context context) {
         super(context, "Login.db", null , 1);
@@ -40,6 +41,7 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put("password", password);
         //insert values in table
         long result = MyDB.insert("users", null, contentValues);
+        username1 = username;
 
         // if statement to check if insertion is successful or not
 
@@ -47,7 +49,9 @@ public class DBHelper extends SQLiteOpenHelper {
             return false;
             else
                 return true;
+
     }
+
 
     public boolean checkusername(String username){
         SQLiteDatabase MyDB = this.getWritableDatabase();
@@ -65,10 +69,19 @@ public class DBHelper extends SQLiteOpenHelper {
         Cursor cursor = MyDB.rawQuery("Select * from users where username = ? and password = ?", new String[] {username, password});
 
         if (cursor.getCount() > 0)
+        {
+            username1 = username;
             return true;
+        }
         else
             return false;
 
+    }
+
+    public void getAllUsers() {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        Cursor cursor = MyDB.rawQuery("Select * from users", new String[] {});
+        System.out.println(cursor);
     }
 
 }
