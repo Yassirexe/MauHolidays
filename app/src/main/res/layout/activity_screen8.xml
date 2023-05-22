@@ -43,7 +43,6 @@
 
 
     <TextView
-
         android:text="3. In which year did the Dutch attempt to settle in Mauritius?"
         android:layout_width="400dp"
         android:layout_height="45dp"
@@ -54,7 +53,6 @@
         android:textAlignment="viewStart"
         android:textSize="15sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
-
         />
 
 

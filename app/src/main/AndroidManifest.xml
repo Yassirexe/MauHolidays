@@ -12,6 +12,15 @@
         android:theme="@style/Theme.MauHolidays"
         tools:targetApi="31">
         <activity
+            android:name=".screen789"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Menu"
             android:exported="false" />
         <activity
@@ -23,15 +32,12 @@
         <activity
             android:name=".screen25"
             android:exported="false" />
-
         <activity
             android:name=".screen24"
             android:exported="false" />
-
         <activity
             android:name=".screen23"
             android:exported="false" />
-
         <activity
             android:name=".screen22"
             android:exported="false" />
@@ -59,7 +65,6 @@
         <activity
             android:name=".screen14"
             android:exported="false" />
-
         <activity
             android:name=".screen13"
             android:exported="false" />
@@ -95,22 +100,13 @@
             android:exported="false" />
         <activity
             android:name=".screen2"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
-
-    <activity
+            android:exported="false"/>
+        <activity
             android:name=".screen1"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
     </application>
 
 </manifest>
