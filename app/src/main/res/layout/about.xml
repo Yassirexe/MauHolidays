@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/homebg"
+        tools:context=".inter1">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/backbutton">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/teal_700"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:text="About us"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="This software application  MauHolidays App has been developped for mobile devices create by Team B. The Application is virtual tour guide  that can be used interactively. The app contains points of interests,quiz and history about mauritius, descriptions and photos for each specific tour and description of different kind restaurant in Mauritus. Best used to preplan your trip."
+            android:layout_marginTop="140dp"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Contact"
+            android:layout_marginTop="360dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Email : MauHolidays@TouristApp.com"
+            android:layout_marginTop="399dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            android:layout_marginLeft="19dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Contact Number: +230 5456 3478"
+            android:layout_marginTop="430dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="19dp"/>
+
+
+
+    </RelativeLayout>
+</FrameLayout>
