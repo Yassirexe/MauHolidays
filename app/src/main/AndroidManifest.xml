@@ -22,21 +22,16 @@
             android:exported="false" />
         <activity
             android:name=".screen25"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:exported="false" />
 
         <activity
             android:name=".screen24"
             android:exported="false" />
+
         <activity
             android:name=".screen23"
             android:exported="false" />
+
         <activity
             android:name=".screen22"
             android:exported="false" />
@@ -100,7 +95,14 @@
             android:exported="false" />
         <activity
             android:name=".screen2"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
 
     <activity
             android:name=".screen1"

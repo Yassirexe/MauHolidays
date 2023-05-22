@@ -44,7 +44,7 @@
     <ImageView
         android:layout_width="260dp"
         android:layout_height="190dp"
-        android:background="@drawable/slogan7"
+        android:background="@drawable/sloganfour"
         android:layout_marginTop="170dp"
         android:layout_gravity="center_horizontal"
 
