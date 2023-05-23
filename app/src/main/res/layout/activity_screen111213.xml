@@ -31,7 +31,7 @@
             android:layout_marginStart="100dp"
             android:fontFamily="sans-serif-black"
             android:paddingTop="10dp"
-            android:text="Arrival of the Dutch"
+            android:text="The French Period"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
@@ -65,7 +65,7 @@
                 android:layout_marginStart="10dp"
                 android:fontFamily="sans-serif-black"
                 android:paddingTop="10dp"
-                android:text="1.In which year did the Dutch land on Mauritius?"
+                android:text="1.In which year did the Dutch land in Mauritius?"
                 android:textAlignment="viewStart"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 android:textSize="15sp"
@@ -84,7 +84,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_marginStart="10dp"
-                    android:text="1968"
+                    android:text="1720"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textSize="15sp"
 
@@ -95,7 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_marginStart="10dp"
-                    android:text="1940"
+                    android:text="1740"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textSize="15sp"
@@ -109,7 +109,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_marginStart="10dp"
-                    android:text="1598"
+                    android:text="1715"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textSize="15sp" />
@@ -119,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_marginStart="10dp"
-                    android:text="1999"
+                    android:text="1668"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textSize="15sp" />
@@ -133,7 +133,7 @@
                 android:layout_marginStart="10dp"
                 android:fontFamily="sans-serif-black"
                 android:paddingTop="10dp"
-                android:text="2. What name did the Dutch give the island?"
+                android:text="2. What name did the French give the island?"
                 android:textAlignment="viewStart"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 android:textSize="15sp"
@@ -153,7 +153,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_marginStart="10dp"
-                    android:text="Mascarene Islands"
+                    android:text="Mascarene Island"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textSize="15sp"
 
@@ -188,7 +188,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_marginStart="10dp"
-                    android:text="St Brandon"
+                    android:text="Isle de France"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textSize="15sp"
@@ -197,10 +197,8 @@
             </RadioGroup>
 
 
-<!--            screen8-->
-
             <TextView
-                android:text="3. In which year did the Dutch attempt to settle in Mauritius?"
+                android:text="3. In which year did the island start to develop effectively?"
                 android:layout_width="400dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="10dp"
@@ -223,7 +221,7 @@
                 <RadioButton android:id="@+id/A"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="1638"
+                    android:text="1720"
                     android:layout_marginStart="10dp"
                     android:textSize="15sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
@@ -233,7 +231,7 @@
                 <RadioButton android:id="@+id/B"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="1538"
+                    android:text="1730"
                     android:layout_marginStart="10dp"
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
@@ -246,7 +244,7 @@
                 <RadioButton android:id="@+id/C"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="1660"
+                    android:text="1735"
                     android:layout_marginStart="10dp"
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
@@ -255,7 +253,7 @@
                 <RadioButton android:id="@+id/D"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="1520"
+                    android:text="1740"
                     android:layout_marginStart="10dp"
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
@@ -268,7 +266,7 @@
 
             <TextView
 
-                android:text="4. For how many years did the Dutch stay on the island?"
+                android:text="4. What was the name of the French governor at that time?"
                 android:layout_width="400dp"
                 android:layout_height="45dp"
                 android:layout_marginStart="10dp"
@@ -292,7 +290,7 @@
                 <RadioButton android:id="@+id/one"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="3"
+                    android:text="Mahe de La Bourdonnais"
                     android:layout_marginStart="10dp"
                     android:textSize="15sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
@@ -302,7 +300,7 @@
                 <RadioButton android:id="@+id/two"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="7"
+                    android:text="Mahe Pereira"
                     android:layout_marginStart="10dp"
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
@@ -315,7 +313,7 @@
                 <RadioButton android:id="@+id/three"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="20"
+                    android:text="Mahe Don"
                     android:layout_marginStart="10dp"
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
@@ -324,7 +322,7 @@
                 <RadioButton android:id="@+id/four"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="12"
+                    android:text="Fernandez Mahe"
                     android:layout_marginStart="10dp"
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
@@ -334,11 +332,10 @@
 
             </RadioGroup>
 
-<!--            screen9-->
 
             <TextView
 
-                android:text="5.  When did the Dutch leave Mauritius?"
+                android:text="5. Which place was established as a naval base?"
                 android:layout_width="400dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="10dp"
@@ -362,7 +359,7 @@
                     android:id="@+id/questionfivea"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="1700"
+                    android:text="Mahebourg"
                     android:layout_marginStart="10dp"
                     android:textSize="15sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
@@ -372,7 +369,7 @@
                     android:id="@+id/questionfiveb"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="1710"
+                    android:text="Savanne"
                     android:layout_marginStart="10dp"
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
@@ -384,7 +381,7 @@
                     android:id="@+id/questionfivec"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="1720"
+                    android:text="Port Louis"
                     android:onClick="onRadioButtonClicked"
                     android:layout_marginStart="10dp"
                     android:textAlignment="viewStart"
@@ -395,7 +392,7 @@
                     android:id="@+id/questionfived"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:text="1730"
+                    android:text="Pamplemousses"
                     android:layout_marginStart="10dp"
                     android:textAlignment="viewStart"
                     android:textSize="15sp"

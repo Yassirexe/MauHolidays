@@ -62,7 +62,7 @@
 
 
     <TextView
-        android:text="The abolition of slavery had important repercussions. The planters turned to India, from where they brought a large number of indentured labourers to work in the sugar cane fields. The Indian immigrant were to change rapidly the fabric of the society. They were later joined by a small number of Chinese traders."
+        android:text="The abolition of slavery had important repercussions. The planters turned to India, from where they brought a large number of indentured labourers to work in the sugar cane fields. The Indian immigrants were to change rapidly the fabric of the society. They were later joined by a small number of Chinese traders."
         android:layout_marginTop="425dp"
         android:layout_marginStart="40dp"
         android:textAlignment="center"
