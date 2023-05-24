@@ -2,7 +2,6 @@ package com.example.mauholidays;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-<<<<<<< Updated upstream
 import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,18 +12,10 @@ import android.widget.RadioButton;
 public class screen345 extends AppCompatActivity {
     private Button b1;
 
-    @SuppressLint("MissingInflatedId")
-=======
-import android.os.Bundle;
-
-public class screen345 extends AppCompatActivity {
-
->>>>>>> Stashed changes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen345);
-<<<<<<< Updated upstream
         b1 = findViewById(R.id.quizsubmit);
 
         b1.setOnClickListener(new View.OnClickListener() {
@@ -121,7 +112,5 @@ public class screen345 extends AppCompatActivity {
 
         });
 
-=======
->>>>>>> Stashed changes
     }
 }
