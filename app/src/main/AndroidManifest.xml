@@ -11,8 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MauHolidays"
         tools:targetApi="31">
+
         <activity
-<<<<<<< Updated upstream
             android:name=".screen151617"
             android:exported="false" />
         <activity
@@ -35,11 +35,6 @@
             android:name=".SettingPage"
             android:exported="false"/>
         <activity
-=======
-            android:name=".screen345"
-            android:exported="false" />
-        <activity
->>>>>>> Stashed changes
             android:name=".Menu"
             android:exported="false" />
         <activity
@@ -119,19 +114,12 @@
             android:exported="false" />
         <activity
             android:name=".screen2"
-<<<<<<< Updated upstream
             android:exported="false" />
-=======
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
->>>>>>> Stashed changes
         <activity
             android:name=".screen1"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
