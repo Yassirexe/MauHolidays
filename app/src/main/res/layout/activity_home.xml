@@ -38,6 +38,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="30dp"
+                    android:id="@+id/homeusername"
                     android:text="Guest!"
                     android:textColor="#FF6B00"
                     android:textSize="35dp" />

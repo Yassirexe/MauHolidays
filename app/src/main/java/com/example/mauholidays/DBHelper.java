@@ -1,12 +1,21 @@
 package com.example.mauholidays;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.util.logging.Logger;
 
 public class DBHelper extends SQLiteOpenHelper {
 
@@ -53,8 +62,10 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteDatabase MyDB = this.getWritableDatabase();
         Cursor cursor = MyDB.rawQuery("Select * from users where username = ?", new String[] {username});
 
-        if (cursor.getCount() > 0)
+        if (cursor.getCount() > 0) {
             return true;
+        }
+
         else
             return false;
 
@@ -70,6 +81,7 @@ public class DBHelper extends SQLiteOpenHelper {
             return false;
 
     }
+
 
 }
 
