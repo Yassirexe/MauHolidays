@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".currency"
+    android:background="@drawable/homebg">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/backblack"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertor"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"/>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/currencyround"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/united_states_of_america"
+            android:id="@+id/currencyIcon"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <Spinner
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/currencyChoices"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currencyRate"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/currencyIcon"
+            android:layout_marginLeft="20dp"
+            android:text="1 USD = 44.32 Rupees"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/currencyRate"
+            android:id="@+id/currencyInput"/>
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="0.7dp"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/currencyInput"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/separator">
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/muIcon"
+            android:layout_below="@+id/separator"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/mauritiusicon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/separator"
+            android:layout_marginLeft="70dp"
+            android:textSize="16sp"
+            android:text="MUR - Mauritian Rupees"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/muIcon"
+            android:id="@+id/muRates"
+            android:layout_marginLeft="20dp"
+            android:text="1 MUR = 0.000234"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currencyAnswer"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:text="0.00"
+            android:layout_below="@id/muRates"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
