@@ -15,6 +15,66 @@
             android:name=".map"
             android:exported="false" />
         <activity
+            android:name=".all"
+            android:exported="false"/>
+        <activity
+            android:name=".safari"
+            android:exported="false" />
+        <activity
+            android:name=".mariottHotel"
+            android:exported="false" />
+        <activity
+            android:name=".preskilHotel"
+            android:exported="false" />
+        <activity
+            android:name=".laCroisette"
+            android:exported="false" />
+        <activity
+            android:name=".topTransports"
+            android:exported="false" />
+        <activity
+            android:name=".topPlaces"
+            android:exported="false" />
+        <activity
+            android:name=".top_hotels"
+            android:exported="false" />
+        <activity
+            android:name=".topFoods"
+            android:exported="false" />
+        <activity
+            android:name=".topActivities"
+            android:exported="false" />
+        <activity
+            android:name=".sitarIndianFood"
+            android:exported="false" />
+        <activity
+            android:name=".seaKart_"
+            android:exported="false" />
+        <activity
+            android:name=".theRedChurch"
+            android:exported="false" />
+        <activity
+            android:name=".pizza_"
+            android:exported="false" />
+        <activity
+            android:name=".top_clubs"
+            android:exported="false" />
+        <activity
+            android:name=".leMorne"
+            android:exported="false" />
+        <activity
+            android:name=".pieterBoth"
+            android:exported="false" />
+        <activity
+            android:name=".ssrBotanicalGarden"
+            android:exported="false" />
+        <activity
+            android:name=".top_nature"
+            android:exported="false" />
+        <activity
+            android:name=".caudanwaterfront"
+            android:exported="false"/>
+        <activity
             android:name=".currency"
             android:exported="false" />
         <activity
@@ -58,10 +118,11 @@
             android:exported="false" />
         <activity
             android:name=".screen25"
-            android:exported="false" />
+            android:exported="false"/>
+
         <activity
             android:name=".screen24"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".screen23"
             android:exported="false" />
