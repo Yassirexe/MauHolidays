@@ -12,6 +12,66 @@
         android:theme="@style/Theme.MauHolidays"
         tools:targetApi="31">
         <activity
+            android:name=".all"
+            android:exported="false" />
+        <activity
+            android:name=".safari"
+            android:exported="false" />
+        <activity
+            android:name=".mariottHotel"
+            android:exported="false" />
+        <activity
+            android:name=".preskilHotel"
+            android:exported="false" />
+        <activity
+            android:name=".laCroisette"
+            android:exported="false" />
+        <activity
+            android:name=".topTransports"
+            android:exported="false" />
+        <activity
+            android:name=".topPlaces"
+            android:exported="false" />
+        <activity
+            android:name=".top_hotels"
+            android:exported="false" />
+        <activity
+            android:name=".topFoods"
+            android:exported="false" />
+        <activity
+            android:name=".topActivities"
+            android:exported="false" />
+        <activity
+            android:name=".sitarIndianFood"
+            android:exported="false" />
+        <activity
+            android:name=".seaKart_"
+            android:exported="false" />
+        <activity
+            android:name=".theRedChurch"
+            android:exported="false" />
+        <activity
+            android:name=".pizza_"
+            android:exported="false" />
+        <activity
+            android:name=".top_clubs"
+            android:exported="false" />
+        <activity
+            android:name=".leMorne"
+            android:exported="false" />
+        <activity
+            android:name=".pieterBoth"
+            android:exported="false" />
+        <activity
+            android:name=".ssrBotanicalGarden"
+            android:exported="false" />
+        <activity
+            android:name=".top_nature"
+            android:exported="false" />
+        <activity
+            android:name=".caudanwaterfront"
+            android:exported="false" />
+        <activity
             android:name=".Menu"
             android:exported="false" />
         <activity
@@ -22,15 +82,13 @@
             android:exported="false" />
         <activity
             android:name=".screen25"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
         <activity
             android:name=".screen24"
             android:exported="false" />
@@ -64,7 +122,6 @@
         <activity
             android:name=".screen14"
             android:exported="false" />
-
         <activity
             android:name=".screen13"
             android:exported="false" />
@@ -101,14 +158,12 @@
         <activity
             android:name=".screen2"
             android:exported="false" />
-
-    <activity
+        <activity
             android:name=".screen1"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
     </application>
 
 </manifest>
