@@ -70,6 +70,38 @@
             android:exported="false" />
         <activity
             android:name=".caudanwaterfront"
+            android:name=".currency"
+            android:exported="false"/>
+        <activity
+            android:name=".Emergency"
+            android:exported="false" />
+        <activity
+            android:name=".Favourite"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".screen151617"
+            android:exported="false" />
+        <activity
+            android:name=".screen111213"
+            android:exported="false" />
+        <activity
+            android:name=".screen345"
+            android:exported="false" />
+        <activity
+            android:name=".screen789"
+            android:exported="false" />
+        <activity
+            android:name=".SettingPage"
             android:exported="false" />
         <activity
             android:name=".Menu"
@@ -82,6 +114,7 @@
             android:exported="false" />
         <activity
             android:name=".screen25"
+<<<<<<< HEAD
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -89,6 +122,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+=======
+            android:exported="false" />
+>>>>>>> 41da0437de48e9eaa0faf44084322d6bbf951de4
         <activity
             android:name=".screen24"
             android:exported="false" />
@@ -160,6 +196,15 @@
             android:exported="false" />
         <activity
             android:name=".screen1"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

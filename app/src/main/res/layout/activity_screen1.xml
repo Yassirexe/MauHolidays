@@ -40,65 +40,58 @@
         android:layout_marginTop="110dp"
         android:layout_gravity="center_horizontal"/>
 
-
-
-
-    <Button
-        android:id="@+id/history"
+    <ImageView
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="210dp"
+        android:background="@drawable/monumentb"
+        android:layout_marginTop="180dp"
         android:layout_marginStart="35dp"
-        android:backgroundTint="@color/material_dynamic_primary50"
-        android:paddingTop="90dp"
-        android:textColor="@color/white"
-        android:text="Monuments" />
+        android:clickable="true"
+        android:id="@+id/Monuments"
 
 
+        >
+    </ImageView>
 
-
-    <Button
-        android:id="@+id/monuments"
+    <ImageView
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="210dp"
+        android:background="@drawable/publicholidayb"
+        android:layout_marginTop="180dp"
         android:layout_marginStart="225dp"
-        android:backgroundTint="@color/material_dynamic_primary50"
-        android:paddingTop="90dp"
-        android:textColor="@color/white"
-
-        android:text="Public Holidays" />
-
-
-
-
-    <Button
+        android:clickable="true"
         android:id="@+id/publicHolidays"
+
+
+        >
+    </ImageView>
+
+
+
+    <ImageView
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="400dp"
+        android:background="@drawable/riddlesb"
+        android:layout_marginTop="380dp"
         android:layout_marginStart="35dp"
-        android:backgroundTint="@color/material_dynamic_primary50"
-        android:paddingTop="90dp"
-        android:textColor="@color/white"
-        android:text="Riddles" />
-
-
-
-    <Button
+        android:clickable="true"
         android:id="@+id/riddles"
+
+
+        >
+    </ImageView>
+
+    <ImageView
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="400dp"
+        android:background="@drawable/sloganb"
+        android:layout_marginTop="380dp"
         android:layout_marginStart="225dp"
-        android:backgroundTint="@color/material_dynamic_primary50"
-        android:paddingTop="90dp"
-        android:textColor="@color/white"
+        android:clickable="true"
+        android:id="@+id/slogans"
 
-        android:text="Slogans" />
-
-
-
+        >
+    </ImageView>
 
 
     <Button
