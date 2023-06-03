@@ -137,7 +137,7 @@
             android:id="@+id/leMorne"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/leMorne"
+            android:background="@drawable/le_morne"
             />
     </androidx.cardview.widget.CardView>
 

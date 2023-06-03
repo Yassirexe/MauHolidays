@@ -136,7 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
-            android:background="@drawable/pieterBothMountain"
+            android:background="@drawable/pieter_both_mountain"
             />
     </androidx.cardview.widget.CardView>
 
@@ -200,7 +200,7 @@
             android:id="@+id/leMorne"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/leMorne"
+            android:background="@drawable/le_morne"
             />
     </androidx.cardview.widget.CardView>
 
