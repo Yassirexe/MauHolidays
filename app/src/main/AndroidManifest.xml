@@ -12,8 +12,11 @@
         android:theme="@style/Theme.MauHolidays"
         tools:targetApi="31">
         <activity
+            android:name=".map"
+            android:exported="false" />
+        <activity
             android:name=".currency"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Emergency"
             android:exported="false" />
@@ -26,7 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".signup"
             android:exported="false" />
