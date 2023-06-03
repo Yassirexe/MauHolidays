@@ -56,6 +56,13 @@
             android:layout_below="@id/currencyIcon"
             android:layout_marginLeft="20dp"
             android:text="1 USD = 44.32 Rupees"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45.516463"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:id="@+id/secretRate"/>
 
         <EditText
             android:layout_width="200dp"

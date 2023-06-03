@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -23,26 +24,39 @@ public class Favourite extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favourite);
 
-        ArrayList<String> fav = new ArrayList<>();
-        fav.add(" ");
-        fav.add("caudanonly");
-        fav.add("lacroissetteonly");
-        fav.add("caudanonly");
-        fav.add("lacroissetteonly");
-        fav.add("caudanonly");
-        fav.add("lacroissetteonly");
-        fav.add("caudanonly");
-        fav.add("lacroissetteonly");
-        fav.add("caudanonly");
-        fav.add("lacroissetteonly");
+        ArrayList<String> fav1 = new ArrayList<>();
+        fav1.add(" ");
+        fav1.add("caudanonly_4");
+        fav1.add("lacroissetteonly_3");
+        fav1.add("caudanonly_2");
+        fav1.add("lacroissetteonly_1");
+        fav1.add("caudanonly_5");
+        fav1.add("lacroissetteonly_1");
+        fav1.add("caudanonly_2");
+        fav1.add("lacroissetteonly_2");
+        fav1.add("caudanonly_1");
+        fav1.add("lacroissetteonly_5");
+        String fav = "";
+        int star = 1;
+        String txtstar ="1";
 
         String packageName = getPackageName();
 
-        int arraySize = fav.size();
+        int arraySize = fav1.size();
 
         //String[] imgname = {" ","caudanonly","lacroissetteonly","caudanonly","lacroissetteonly","caudanonly","lacroissetteonly","caudanonly"};
         for(int i =1;i< arraySize;i++) {
 
+            fav = String.valueOf(fav1.get(i).split("_")[0]);
+            Log.i(TAG, "onCreate: " + fav);
+
+            try {
+                txtstar = fav1.get(i).split("_")[1];
+                star = Integer.parseInt(txtstar);
+                Log.i(TAG, "onCreate: " + txtstar);
+            } catch (Exception e) {
+
+            }
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WRAP_CONTENT,
                     RelativeLayout.LayoutParams.WRAP_CONTENT
@@ -56,6 +70,14 @@ public class Favourite extends AppCompatActivity {
                     RelativeLayout.LayoutParams.WRAP_CONTENT
             );
             RelativeLayout.LayoutParams layoutParams4= new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WRAP_CONTENT,
+                    RelativeLayout.LayoutParams.WRAP_CONTENT
+            );
+            RelativeLayout.LayoutParams layoutParamsStar= new RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WRAP_CONTENT,
+                    RelativeLayout.LayoutParams.WRAP_CONTENT
+            );
+            RelativeLayout.LayoutParams layoutParamsLinear= new RelativeLayout.LayoutParams(
                     RelativeLayout.LayoutParams.WRAP_CONTENT,
                     RelativeLayout.LayoutParams.WRAP_CONTENT
             );
@@ -73,7 +95,7 @@ public class Favourite extends AppCompatActivity {
             int frameid = 100+i;
             favFrame.setId(frameid);
             ImageView img = new ImageView(this);
-            String mDrawableName = fav.get(i);
+            String mDrawableName = fav;
             int resId = getResources().getIdentifier(mDrawableName , "drawable", getPackageName());
             img.setImageResource(resId);
             //String desc = mDrawableName;
@@ -98,6 +120,20 @@ public class Favourite extends AppCompatActivity {
             favFrame.addView(textView,layoutParams3);
             layoutParams4.setMargins(650,160,50,20);
             favFrame.addView(checkBox,layoutParams4);
+
+            LinearLayout linearLayout = new LinearLayout(this);
+            linearLayout.setOrientation(LinearLayout.HORIZONTAL);
+
+            //Adding star
+            for(int j =0 ;j<star;j++) {
+                ImageView s = new ImageView(this);
+                s.setImageResource(R.drawable.baseline_star_24);
+                layoutParamsStar.width = 60;
+                layoutParamsStar.height = 60;
+                linearLayout.addView(s,layoutParamsStar);
+            }
+            layoutParamsLinear.setMargins(450,180,10,20);
+            favFrame.addView(linearLayout, layoutParamsLinear);
 
 
             checkBox.setOnClickListener(new View.OnClickListener() {

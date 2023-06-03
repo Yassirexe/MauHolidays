@@ -47,6 +47,8 @@
                 android:background="@drawable/emerframe"
                 android:layout_marginTop="15dp"
                 android:layout_gravity="center"
+                android:clickable="true"
+                android:id="@+id/accidentFrame"
                 >
 
                 <ImageView
@@ -80,6 +82,8 @@
                 android:background="@drawable/emerframe"
                 android:layout_marginTop="15dp"
                 android:layout_gravity="center"
+                android:clickable="true"
+                android:id="@+id/fireFrame"
                 >
 
                 <ImageView
@@ -113,6 +117,8 @@
                 android:background="@drawable/emerframe"
                 android:layout_marginTop="15dp"
                 android:layout_gravity="center"
+                android:clickable="true"
+                android:id="@+id/drowningFrame"
                 >
 
                 <ImageView
@@ -146,6 +152,8 @@
                 android:background="@drawable/emerframe"
                 android:layout_marginTop="15dp"
                 android:layout_gravity="center"
+                android:clickable="true"
+                android:id="@+id/healthFrame"
                 >
 
                 <ImageView
@@ -178,6 +186,8 @@
                 android:background="@drawable/emerframe"
                 android:layout_marginTop="15dp"
                 android:layout_gravity="center"
+                android:clickable="true"
+                android:id="@+id/thiefFrame"
                 >
 
                 <ImageView
