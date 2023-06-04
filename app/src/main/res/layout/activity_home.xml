@@ -393,11 +393,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/searchscreen"
+            android:id="@+id/exploreScreen"
             android:text="Search"
-            android:drawableTop="@drawable/baseline_search_24"
+            android:drawableTop="@drawable/baseline_explore_24"
             android:layout_marginLeft="40dp"
-            android:paddingTop="5dp"/>
+            android:paddingTop="5dp"
+            android:clickable="true"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

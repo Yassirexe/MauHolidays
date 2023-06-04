@@ -75,6 +75,14 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.exploreScreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, videoMain.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
