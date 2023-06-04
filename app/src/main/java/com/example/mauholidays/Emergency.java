@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class Emergency extends AppCompatActivity {
@@ -59,6 +60,15 @@ public class Emergency extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "112"));// Initiates the Intent
+                startActivity(intent);
+            }
+        });
+
+        ImageView backToHome = (ImageView) findViewById(R.id.backToHomeFromEmergency);
+        backToHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Emergency.this, Home.class);
                 startActivity(intent);
             }
         });

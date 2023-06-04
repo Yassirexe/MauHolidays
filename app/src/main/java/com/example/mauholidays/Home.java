@@ -25,6 +25,16 @@ public class Home extends AppCompatActivity {
         String username = readUsername("username.txt");
         usernamehome.setText(username);
 
+        TextView favScreen = (TextView) findViewById(R.id.favscreen);
+
+        favScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, Favourite.class);
+                startActivity(intent);
+            }
+        });
+
         findViewById(R.id.jumptoquiz).setOnClickListener(new View.OnClickListener() {
             @Override
            public void onClick(View v) {
@@ -32,18 +42,55 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        findViewById(R.id.goToMap).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, map.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.toHotel).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, leMorne.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.goToEmergency).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, Emergency.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.goToExchangeRate).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, currency.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     public String readUsername(String filePath) {
         File path = getApplicationContext().getFilesDir();
         File readFrom = new File(path, filePath);
-        byte[] name = new byte[(int) readFrom.length()];
-        try {
-            FileInputStream stream = new FileInputStream(readFrom);
-            stream.read(name);
-            return new String(name);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        if(readFrom.exists()) {
+            byte[] name = new byte[(int) readFrom.length()];
+            try {
+                FileInputStream stream = new FileInputStream(readFrom);
+                stream.read(name);
+                return new String(name);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
         }
+        return new String("Guest");
     }
 }

@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/leMorne"
+            android:src="@drawable/lemorne"
             />
     </androidx.cardview.widget.CardView>
 
@@ -32,7 +32,7 @@
         android:layout_marginStart="20dp"
         />
 
-    <ImageButton
+    <CheckBox
         android:id="@+id/favourite5"
         android:layout_width="30dp"
         android:layout_height="30dp"

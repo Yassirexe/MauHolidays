@@ -240,7 +240,7 @@
             android:layout_width="190dp"
             android:layout_height="215dp"
             android:scaleType="centerCrop"
-            android:background="@drawable/redChurch"
+            android:background="@drawable/redchurch"
             />
     </androidx.cardview.widget.CardView>
 

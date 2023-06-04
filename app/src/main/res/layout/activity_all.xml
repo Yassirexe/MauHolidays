@@ -134,10 +134,10 @@
         app:cardCornerRadius="15dp">
 
         <ImageView
-            android:id="@+id/leMorne"
+            android:id="@+id/lemorne"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/le_morne"
+            android:background="@drawable/lemorne"
             />
     </androidx.cardview.widget.CardView>
 
