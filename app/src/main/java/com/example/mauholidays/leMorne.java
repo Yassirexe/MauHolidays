@@ -24,6 +24,7 @@ public class leMorne extends AppCompatActivity {
 
 
         CheckBox fav5 = (CheckBox) findViewById(R.id.favourite5);
+        fav5.setChecked(true);
         fav5.setOnClickListener(new View.OnClickListener() {
             String username = readUsername("username.txt");
             @Override

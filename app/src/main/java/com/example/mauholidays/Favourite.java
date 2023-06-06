@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
@@ -47,6 +48,10 @@ public class Favourite extends AppCompatActivity {
 //        fav1.add("lacroissetteonly_2");
 //        fav1.add("caudanonly_1");
 //        fav1.add("lacroissetteonly_5");
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        int screenWidth = displayMetrics.widthPixels;
+        int desiredWidth = (int) (screenWidth * 0.8);
         String fav = "";
         int star = 1;
         String txtstar ="1";
@@ -119,7 +124,7 @@ public class Favourite extends AppCompatActivity {
                     layoutParams.topMargin = 50;
                 }
                 textView.setShadowLayer(5, 1, 1, Color.GRAY);
-//            layoutParams.width = 1200;
+                layoutParams.width = desiredWidth;
 //            layoutParams.height =200;
                 relativeLayout.addView(favFrame, layoutParams);
                 layoutParams2.width = 220;
@@ -128,7 +133,8 @@ public class Favourite extends AppCompatActivity {
                 layoutParams2.addRule(RelativeLayout.CENTER_VERTICAL, RelativeLayout.TRUE);
                 favFrame.addView(img, layoutParams2);
                 layoutParams3.width = 350;
-                layoutParams3.setMargins(460, 80, 0, 0);
+                layoutParams3.topMargin = 80;
+                layoutParams3.leftMargin = (int) (desiredWidth * 0.8 * 0.8);
                 favFrame.addView(textView, layoutParams3);
                 layoutParams4.setMargins(650, 160, 50, 20);
                 favFrame.addView(checkBox, layoutParams4);

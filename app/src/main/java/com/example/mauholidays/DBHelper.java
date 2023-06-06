@@ -8,6 +8,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -94,7 +95,28 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public void removeFromFav(String username, String place) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor cursor = MyDB.rawQuery("DELETE FROM favourites WHERE username = ? AND place = ?", new String[]{username, place});
+
+        String tableName = "favourites";
+        String columnValue = "value_to_match";
+
+// Build the WHERE clause
+        String selection =  "username = ? and place = ?";
+        String[] selectionArgs = { username, place };
+
+// Perform the deletion
+        int deletedRows = MyDB.delete(tableName, selection, selectionArgs);
+
+// Check the number of deleted rows
+        if (deletedRows > 0) {
+
+            Log.i(TAG, "removeFromFav: Removed");
+        } else {
+            Log.i(TAG, "No item removed!");
+        }
+
+// Close the database connection
+        MyDB.close();
+
     }
 
     public ArrayList<String> getFavourite(String usernames) {

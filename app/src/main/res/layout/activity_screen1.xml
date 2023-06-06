@@ -48,8 +48,7 @@
         android:layout_marginStart="35dp"
         android:clickable="true"
         android:id="@+id/Monuments"
-
-
+        android:contentDescription="a button"
         >
     </ImageView>
 
@@ -89,7 +88,7 @@
         android:layout_marginStart="225dp"
         android:clickable="true"
         android:id="@+id/slogans"
-
+        android:contentDescription="a button"
         >
     </ImageView>
 
