@@ -394,7 +394,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/exploreScreen"
-            android:text="Search"
+            android:text="Explore"
             android:drawableTop="@drawable/baseline_explore_24"
             android:layout_marginLeft="40dp"
             android:paddingTop="5dp"
@@ -403,7 +403,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/favscreen"
+            android:id="@+id/favscreen1"
             android:text="Favourites"
             android:drawableTop="@drawable/baseline_favorite_24"
             android:layout_marginLeft="40dp"
@@ -411,7 +411,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/profilescreen"
+            android:id="@+id/profileScreen1"
             android:text="Profile"
             android:drawableTop="@drawable/baseline_account_circle_24"
             android:layout_marginLeft="40dp"

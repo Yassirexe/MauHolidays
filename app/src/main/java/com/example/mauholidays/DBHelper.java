@@ -83,6 +83,26 @@ public class DBHelper extends SQLiteOpenHelper {
 
     }
 
+    public boolean updateProfile(String oldUsername, String password, String newUsername) {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("username", newUsername);
+        values.put("password", password);
+
+        String table = "users"; // Replace "table_name" with the actual table name
+        String whereClause = "username = ?"; // Replace "column_name" with the actual column name used in the WHERE clause
+        String[] whereArgs = {oldUsername}; // Replace "valueToMatch" with the specific value that identifies the row(s) you want to update
+
+        int rowsAffected = MyDB.update(table, values, whereClause, whereArgs);
+        if (rowsAffected > 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+
+    }
+
     public void addToFavourite(String username, String place) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -138,16 +158,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 null
         );
         if (cursor.getCount() > 0) {
-//            cursor.moveToFirst();
-//            while (cursor.isAfterLast() == false) {
-//                favItem.add(cursor.getString(1));
-//                cursor.moveToNext();
-//            }
-//            cursor.close();
-//            return favItem;
-//        }else {
-//            return favItem;
-//        }
+
             while (cursor.moveToNext()) {
                 // Retrieve values from the cursor
                 String username = cursor.getString(cursor.getColumnIndexOrThrow("username"));

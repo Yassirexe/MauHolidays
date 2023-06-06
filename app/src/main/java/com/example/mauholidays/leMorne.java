@@ -24,15 +24,19 @@ public class leMorne extends AppCompatActivity {
 
 
         CheckBox fav5 = (CheckBox) findViewById(R.id.favourite5);
-        fav5.setChecked(true);
+        fav5.setChecked(false);
+        fav5.setButtonDrawable(R.drawable.baseline_favorite_border_24);
+
         fav5.setOnClickListener(new View.OnClickListener() {
             String username = readUsername("username.txt");
             @Override
             public void onClick(View v) {
-                if(fav5.isChecked()) {
+                if(!fav5.isChecked()) {
                     DB.removeFromFav(username,"lemorne_3");
+                    fav5.setButtonDrawable(R.drawable.baseline_favorite_border_24);
                 }else {
                     DB.addToFavourite(username,"lemorne_3");
+                    fav5.setButtonDrawable(R.drawable.heart_red);
                 }
             }
         });

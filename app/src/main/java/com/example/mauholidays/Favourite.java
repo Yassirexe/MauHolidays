@@ -4,6 +4,7 @@ import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -24,6 +25,7 @@ import java.util.ArrayList;
 public class Favourite extends AppCompatActivity {
 
     DBHelper DB;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -171,12 +173,27 @@ public class Favourite extends AppCompatActivity {
             }
         }
 
-        TextView homeScreen = (TextView) findViewById(R.id.homescreen1);
 
-        homeScreen.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.exploreScreen3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Favourite.this, Home.class);
+                Intent intent = new Intent(Favourite.this, videoMain.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.profilescreen3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Favourite.this, SettingPage.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.homescreen1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Favourite.this, SettingPage.class);
                 startActivity(intent);
             }
         });
