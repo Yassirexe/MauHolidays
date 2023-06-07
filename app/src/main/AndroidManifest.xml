@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,10 +16,84 @@
         android:theme="@style/Theme.MauHolidays"
         tools:targetApi="31">
         <activity
-            android:name=".screen789"
-            android:exported="false"/>
+            android:name=".videoMain"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDpQM7U5AUsI8-1scORRRP8IFtqdkZd4Tc" />
+
         <activity
-            android:name=".SettingPage"
+            android:name=".map"
+            android:exported="false" />
+        <activity
+            android:name=".all"
+            android:exported="false" />
+        <activity
+            android:name=".safari"
+            android:exported="false" />
+        <activity
+            android:name=".mariottHotel"
+            android:exported="false" />
+        <activity
+            android:name=".preskilHotel"
+            android:exported="false" />
+        <activity
+            android:name=".laCroisette"
+            android:exported="false" />
+        <activity
+            android:name=".topTransports"
+            android:exported="false" />
+        <activity
+            android:name=".topPlaces"
+            android:exported="false" />
+        <activity
+            android:name=".top_hotels"
+            android:exported="false" />
+        <activity
+            android:name=".topFoods"
+            android:exported="false" />
+        <activity
+            android:name=".topActivities"
+            android:exported="false" />
+        <activity
+            android:name=".sitarIndianFood"
+            android:exported="false" />
+        <activity
+            android:name=".seaKart_"
+            android:exported="false" />
+        <activity
+            android:name=".theRedChurch"
+            android:exported="false" />
+        <activity
+            android:name=".pizza_"
+            android:exported="false" />
+        <activity
+            android:name=".top_clubs"
+            android:exported="false" />
+        <activity
+            android:name=".leMorne"
+            android:exported="false" />
+        <activity
+            android:name=".pieterBoth"
+            android:exported="false" />
+        <activity
+            android:name=".ssrBotanicalGarden"
+            android:exported="false" />
+        <activity
+            android:name=".top_nature"
+            android:exported="false" />
+        <activity
+            android:name=".caudanwaterfront"
+            android:exported="false" />
+        <activity
+            android:name=".currency"
+            android:exported="false" />
+        <activity
+            android:name=".Emergency"
+            android:exported="false" />
+        <activity
+            android:name=".Favourite"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +101,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".screen151617"
+            android:exported="false" />
+        <activity
+            android:name=".screen111213"
+            android:exported="false" />
+        <activity
+            android:name=".screen345"
+            android:exported="false" />
+        <activity
+            android:name=".screen789"
+            android:exported="false" />
+        <activity
+            android:name=".SettingPage"
+            android:exported="false" />
         <activity
             android:name=".Menu"
             android:exported="false" />
@@ -103,9 +199,18 @@
             android:exported="false" />
         <activity
             android:name=".screen2"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".screen1"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

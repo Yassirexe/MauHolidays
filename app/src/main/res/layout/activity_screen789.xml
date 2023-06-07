@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".screen789">
+    tools:context=".screen789"
+    android:background="@drawable/homebg">
 
     <LinearLayout
         android:id="@+id/linearLayout"

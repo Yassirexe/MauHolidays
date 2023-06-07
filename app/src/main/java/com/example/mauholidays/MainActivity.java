@@ -82,41 +82,43 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Edit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+//       Edit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Intent intent = new Intent(SettingPage.this, EditProfile.class);
+//                startActivity(intent);
+//            }
+//        });
+//        privacy.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Intent intent = new Intent(SettingPage.this, PrivacyPolicy.class);
+//                startActivity(intent);
+//            }
+//        });
+//        helpsetting.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Intent intent = new Intent(SettingPage.this, HelpSetting.class);
+//                startActivity(intent);
+//            }
+//
+//        });
+//        about.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Intent intent = new Intent(SettingPage.this, about.class);
+//                startActivity(intent);
+//            }
+//
+//        });
+//    }
+       }
 
-                Intent intent = new Intent(MainActivity.this, EditProfile.class);
-                startActivity(intent);
-            }
-        });
-        privacy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, PrivacyPolicy.class);
-                startActivity(intent);
-            }
-        });
-        helpsetting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, HelpSetting.class);
-                startActivity(intent);
-            }
-
-        });
-        about.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, about.class);
-                startActivity(intent);
-            }
-
-        });
-    }
 }
 
 

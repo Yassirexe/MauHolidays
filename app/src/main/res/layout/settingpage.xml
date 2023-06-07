@@ -295,6 +295,7 @@
                             android:textStyle="bold" />
 
                         <ImageView
+                            android:id="@+id/buttonLogout"
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_marginLeft="260dp"

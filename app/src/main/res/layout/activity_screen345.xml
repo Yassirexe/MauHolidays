@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen789"
+    android:background="@drawable/homebg">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/backbutton" />
+
+
+        <TextView
+
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="100dp"
+            android:fontFamily="sans-serif-black"
+            android:paddingTop="10dp"
+            android:text="Discovery of Mauritius"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:background="@color/black">
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-black"
+                android:paddingTop="10dp"
+                android:text="1.What name did the Arabs give Mauritius when they came on the island?"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="15sp"
+                android:id="@+id/q1quiztext"
+                />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question1"
+                android:layout_below="@+id/q1quiztext"
+                >
+
+                <RadioButton
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:buttonTint="@color/black"
+                    android:layout_marginStart="10dp"
+                    android:text="Mascarene Islands"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Ile de France"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:buttonTint="@color/black"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:text="St Brandon"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton
+                    android:id="@+id/fourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Dina Arobi"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:buttonTint="@color/black"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="400dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-black"
+                android:paddingTop="10dp"
+                android:text="2. What is the name of the first Portuguese sailor?"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="15sp"
+                android:layout_below="@+id/question1"
+                android:id="@+id/question2text"
+                />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question2text"
+                android:id="@+id/question2"
+                >
+
+                <RadioButton
+                    android:id="@+id/mascarene"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Don Pedro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton
+                    android:id="@+id/cirne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Domingo Fernandez Pereira"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:buttonTint="@color/black"
+
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/mauritius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Bruno Fernandes"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton
+                    android:id="@+id/brandon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Don Pereira"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15sp"
+                    android:buttonTint="@color/black"
+
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:text="3. What name did the Portuguese give Mauritius?"
+                android:layout_width="400dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-black"
+                android:paddingTop="10dp"
+                android:textAlignment="viewStart"
+                android:textSize="15sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:layout_below="@+id/question2"
+                android:id="@+id/question3text"
+                />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question3"
+                android:layout_below="@id/question3text"
+                >
+                <RadioButton android:id="@+id/A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Cirne"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+
+                    />
+
+                <RadioButton android:id="@+id/B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Ile de la Passe"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+
+
+
+                    />
+
+
+                <RadioButton android:id="@+id/C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Portugal"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton android:id="@+id/D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Rodrigues"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+
+                    />
+
+            </RadioGroup>
+
+
+            <TextView
+
+                android:text="4. Which bird did the Portuguese find on the island?"
+                android:layout_width="400dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-black"
+                android:paddingTop="10dp"
+                android:textAlignment="viewStart"
+                android:textSize="15sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:id="@+id/question4text"
+                android:layout_below="@id/question3"
+                />
+
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question4"
+                android:layout_below="@id/question4text"
+                >
+                <RadioButton android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Kestrel"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+
+                    />
+
+                <RadioButton android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Dodo"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+
+
+                    />
+
+
+                <RadioButton android:id="@+id/three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Mauritius Parakeet"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton android:id="@+id/four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Pink Pigeon"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+
+                    />
+
+            </RadioGroup>
+
+
+            <TextView
+
+                android:text="5. Why did the Portuguese not stay for long?"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/question4"
+                android:fontFamily="sans-serif-black"
+                android:paddingTop="10dp"
+                android:textAlignment="viewStart"
+                android:textSize="15sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:id="@+id/question5text"
+                />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question5"
+                android:layout_below="@+id/question5text"
+                >
+                <RadioButton
+                    android:id="@+id/questionfivea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="They had no food on the island"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton
+                    android:id="@+id/questionfiveb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Rats ate their food"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/questionfivec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="There were frequent storms"
+                    android:onClick="onRadioButtonClicked"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+                    />
+
+                <RadioButton
+                    android:id="@+id/questionfived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="They were not interested in this island"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+                    />
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/question5"
+                android:text="Submit"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/quizsubmit"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/quizsubmit">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
