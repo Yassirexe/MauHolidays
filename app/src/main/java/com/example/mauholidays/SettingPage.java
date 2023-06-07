@@ -1,6 +1,6 @@
 package com.example.mauholidays;
 
-<<<<<<< HEAD
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -11,17 +11,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class SettingPage extends AppCompatActivity {
-
-    //declare variables
-    EditText username, password, repassword;
-    Button signup, signin, Edit;
-    DBHelper DB;
-    ImageView privacy, helpsetting, about,logout;
-
-=======
+import java.io.File;
+import java.io.FileInputStream;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -34,10 +28,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.io.File;
 import java.io.FileInputStream;
 
-public class SettingPage  extends AppCompatActivity {
+public class SettingPage extends AppCompatActivity {
 
+    //declare variables
+    EditText username, password, repassword;
+    Button signup, signin, Edit;
     DBHelper DB;
->>>>>>> 6d0c46f920d4217cf3d4bcfda1d480cff6323f49
+    ImageView privacy, helpsetting, about,logout;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -45,7 +42,6 @@ public class SettingPage  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settingpage);
 
-<<<<<<< HEAD
         //initialise variables
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
@@ -62,28 +58,20 @@ public class SettingPage  extends AppCompatActivity {
         //listeners for buttons
 
 
-        Edit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-=======
-        DB = new DBHelper(this);
 
         String username = readUsername("username.txt");
         TextView UserTitle = (TextView) findViewById(R.id.settingUserName);
         UserTitle.setText(username);
-
         Button goToEdit = findViewById(R.id.buttonEdit);
-
         goToEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
->>>>>>> 6d0c46f920d4217cf3d4bcfda1d480cff6323f49
                 Intent intent = new Intent(SettingPage.this, EditProfile.class);
                 startActivity(intent);
             }
         });
-<<<<<<< HEAD
+
         privacy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -122,12 +110,8 @@ public class SettingPage  extends AppCompatActivity {
                 finish();
             }
         });
-
-=======
-
 //        logout
-
-        findViewById(R.id.logout).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.buttonLogout).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 File dir = getFilesDir();
@@ -150,7 +134,6 @@ public class SettingPage  extends AppCompatActivity {
             }
         });
 
-
         findViewById(R.id.homescreen4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -158,7 +141,6 @@ public class SettingPage  extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
         TextView favScreen = (TextView) findViewById(R.id.favscreen4);
 
@@ -170,10 +152,6 @@ public class SettingPage  extends AppCompatActivity {
             }
         });
 
-
-
-
->>>>>>> 6d0c46f920d4217cf3d4bcfda1d480cff6323f49
     }
 
     public String readUsername(String filePath) {
@@ -193,17 +171,6 @@ public class SettingPage  extends AppCompatActivity {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
