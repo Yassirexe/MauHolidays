@@ -8,6 +8,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -82,6 +83,26 @@ public class DBHelper extends SQLiteOpenHelper {
 
     }
 
+    public boolean updateProfile(String oldUsername, String password, String newUsername) {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put("username", newUsername);
+        values.put("password", password);
+
+        String table = "users"; // Replace "table_name" with the actual table name
+        String whereClause = "username = ?"; // Replace "column_name" with the actual column name used in the WHERE clause
+        String[] whereArgs = {oldUsername}; // Replace "valueToMatch" with the specific value that identifies the row(s) you want to update
+
+        int rowsAffected = MyDB.update(table, values, whereClause, whereArgs);
+        if (rowsAffected > 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+
+    }
+
     public void addToFavourite(String username, String place) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -94,7 +115,28 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public void removeFromFav(String username, String place) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor cursor = MyDB.rawQuery("DELETE FROM favourites WHERE username = ? AND place = ?", new String[]{username, place});
+
+        String tableName = "favourites";
+        String columnValue = "value_to_match";
+
+// Build the WHERE clause
+        String selection =  "username = ? and place = ?";
+        String[] selectionArgs = { username, place };
+
+// Perform the deletion
+        int deletedRows = MyDB.delete(tableName, selection, selectionArgs);
+
+// Check the number of deleted rows
+        if (deletedRows > 0) {
+
+            Log.i(TAG, "removeFromFav: Removed");
+        } else {
+            Log.i(TAG, "No item removed!");
+        }
+
+// Close the database connection
+        MyDB.close();
+
     }
 
     public ArrayList<String> getFavourite(String usernames) {
@@ -116,16 +158,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 null
         );
         if (cursor.getCount() > 0) {
-//            cursor.moveToFirst();
-//            while (cursor.isAfterLast() == false) {
-//                favItem.add(cursor.getString(1));
-//                cursor.moveToNext();
-//            }
-//            cursor.close();
-//            return favItem;
-//        }else {
-//            return favItem;
-//        }
+
             while (cursor.moveToNext()) {
                 // Retrieve values from the cursor
                 String username = cursor.getString(cursor.getColumnIndexOrThrow("username"));

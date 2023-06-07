@@ -1,5 +1,6 @@
 package com.example.mauholidays;
 
+<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -20,6 +21,23 @@ public class SettingPage extends AppCompatActivity {
     DBHelper DB;
     ImageView privacy, helpsetting, about,logout;
 
+=======
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+public class SettingPage  extends AppCompatActivity {
+
+    DBHelper DB;
+>>>>>>> 6d0c46f920d4217cf3d4bcfda1d480cff6323f49
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -27,6 +45,7 @@ public class SettingPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settingpage);
 
+<<<<<<< HEAD
         //initialise variables
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
@@ -47,10 +66,24 @@ public class SettingPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+=======
+        DB = new DBHelper(this);
+
+        String username = readUsername("username.txt");
+        TextView UserTitle = (TextView) findViewById(R.id.settingUserName);
+        UserTitle.setText(username);
+
+        Button goToEdit = findViewById(R.id.buttonEdit);
+
+        goToEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+>>>>>>> 6d0c46f920d4217cf3d4bcfda1d480cff6323f49
                 Intent intent = new Intent(SettingPage.this, EditProfile.class);
                 startActivity(intent);
             }
         });
+<<<<<<< HEAD
         privacy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,7 +123,75 @@ public class SettingPage extends AppCompatActivity {
             }
         });
 
+=======
+
+//        logout
+
+        findViewById(R.id.logout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                File dir = getFilesDir();
+                File file = new File(dir, "username.txt");
+                boolean deleted = file.delete();
+                if(deleted) {
+                    Intent intent = new Intent(SettingPage.this, LoginActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
+//        Button navbar
+
+        findViewById(R.id.exploreScreen4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SettingPage.this, videoMain.class);
+                startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.homescreen4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SettingPage.this, Home.class);
+                startActivity(intent);
+            }
+        });
+
+
+        TextView favScreen = (TextView) findViewById(R.id.favscreen4);
+
+        favScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SettingPage.this, Favourite.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+>>>>>>> 6d0c46f920d4217cf3d4bcfda1d480cff6323f49
     }
+
+    public String readUsername(String filePath) {
+        File path = getApplicationContext().getFilesDir();
+        File readFrom = new File(path, filePath);
+        if(readFrom.exists()) {
+            byte[] name = new byte[(int) readFrom.length()];
+            try {
+                FileInputStream stream = new FileInputStream(readFrom);
+                stream.read(name);
+                return new String(name);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+        return new String("Guest");
+    }
+
 }
 
 

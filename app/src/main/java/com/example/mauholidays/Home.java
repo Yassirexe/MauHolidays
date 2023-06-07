@@ -25,7 +25,7 @@ public class Home extends AppCompatActivity {
         String username = readUsername("username.txt");
         usernamehome.setText(username);
 
-        TextView favScreen = (TextView) findViewById(R.id.favscreen);
+        TextView favScreen = (TextView) findViewById(R.id.favscreen1);
 
         favScreen.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +79,14 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, videoMain.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.profileScreen1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, SettingPage.class);
                 startActivity(intent);
             }
         });

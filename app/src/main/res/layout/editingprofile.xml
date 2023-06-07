@@ -15,6 +15,7 @@
             android:layout_height="30dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="25dp"
+            android:id="@+id/backFromEditProfile"
             android:background="@drawable/backbutton">
 
         </ImageView>
@@ -41,6 +42,7 @@
                 android:text="Kawshar Emanden"
                 android:textColor="@color/black"
                 android:textSize="25dp"
+                android:id="@+id/editProfileUserName"
                 android:textStyle="bold" />
 
             <EditText
@@ -83,8 +85,15 @@
                 android:layout_marginTop="500dp"
                 android:layout_marginLeft="100dp"
                 android:text="Confirm"
+<<<<<<< HEAD
                 android:background="@drawable/round_back_secondary"
                 android:textStyle="bold"/>
+=======
+                android:textStyle="bold"
+                android:background="@color/blue"
+                android:id="@+id/editSubmit"/>
+
+>>>>>>> 6d0c46f920d4217cf3d4bcfda1d480cff6323f49
         </RelativeLayout>
     </RelativeLayout>
 </FrameLayout>
