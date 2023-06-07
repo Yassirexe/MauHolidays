@@ -38,7 +38,7 @@ public class Home extends AppCompatActivity {
         findViewById(R.id.jumptoquiz).setOnClickListener(new View.OnClickListener() {
             @Override
            public void onClick(View v) {
-                Intent intent = new Intent(Home.this, screen345.class);
+                Intent intent = new Intent(Home.this, Menu.class);
                 startActivity(intent);
             }
         });
