@@ -1,12 +1,23 @@
 package com.example.mauholidays;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public class DBHelper extends SQLiteOpenHelper {
 
@@ -14,25 +25,26 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String DBNAME = "Login.db";
 
     public DBHelper(Context context) {
-        super(context, "Login.db", null , 1);
+        super(context, "Login.db", null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase MyDB) {
         //create tables users wth 2 columns username and password
         MyDB.execSQL("create Table users(username TEXT primary key, password TEXT)");
+        MyDB.execSQL("create Table favourites(username TEXT, place TEXT)");
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase MyDB, int i, int i1) {
         MyDB.execSQL("drop Table if exists users");
-
+        MyDB.execSQL("drop Table if exists favourites");
     }
 
     //method to inset data i.e. username and password
 
-    public boolean insertdata (String username, String password){
+    public boolean insertdata(String username, String password) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         // "colummn name" , variables
@@ -45,13 +57,24 @@ public class DBHelper extends SQLiteOpenHelper {
 
         if (result == -1)
             return false;
-            else
-                return true;
+        else
+            return true;
     }
 
-    public boolean checkusername(String username){
+    public boolean checkusername(String username) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor cursor = MyDB.rawQuery("Select * from users where username = ?", new String[] {username});
+        Cursor cursor = MyDB.rawQuery("Select * from users where username = ?", new String[]{username});
+
+        if (cursor.getCount() > 0) {
+            return true;
+        } else
+            return false;
+
+    }
+
+    public boolean checkuserpassword(String username, String password) {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        Cursor cursor = MyDB.rawQuery("Select * from users where username = ? and password = ?", new String[]{username, password});
 
         if (cursor.getCount() > 0)
             return true;
@@ -60,17 +83,98 @@ public class DBHelper extends SQLiteOpenHelper {
 
     }
 
-    public boolean checkuserpassword(String username , String password){
+    public boolean updateProfile(String oldUsername, String password, String newUsername) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor cursor = MyDB.rawQuery("Select * from users where username = ? and password = ?", new String[] {username, password});
+        ContentValues values = new ContentValues();
+        values.put("username", newUsername);
+        values.put("password", password);
 
-        if (cursor.getCount() > 0)
+        String table = "users"; // Replace "table_name" with the actual table name
+        String whereClause = "username = ?"; // Replace "column_name" with the actual column name used in the WHERE clause
+        String[] whereArgs = {oldUsername}; // Replace "valueToMatch" with the specific value that identifies the row(s) you want to update
+
+        int rowsAffected = MyDB.update(table, values, whereClause, whereArgs);
+        if (rowsAffected > 0) {
             return true;
-        else
+        } else {
             return false;
+        }
+
 
     }
 
+    public void addToFavourite(String username, String place) {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        // "colummn name" , variables
+        contentValues.put("username", username);
+        contentValues.put("place", place);
+        //insert values in table
+        long result = MyDB.insert("favourites", null, contentValues);
+    }
+
+    public void removeFromFav(String username, String place) {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+
+        String tableName = "favourites";
+        String columnValue = "value_to_match";
+
+// Build the WHERE clause
+        String selection =  "username = ? and place = ?";
+        String[] selectionArgs = { username, place };
+
+// Perform the deletion
+        int deletedRows = MyDB.delete(tableName, selection, selectionArgs);
+
+// Check the number of deleted rows
+        if (deletedRows > 0) {
+
+            Log.i(TAG, "removeFromFav: Removed");
+        } else {
+            Log.i(TAG, "No item removed!");
+        }
+
+// Close the database connection
+        MyDB.close();
+
+    }
+
+    public ArrayList<String> getFavourite(String usernames) {
+        ArrayList<String> favItem = new ArrayList<>();
+        favItem.add(" ");
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        String[] projection = {
+                "username",
+                "place"
+        };
+        //Cursor cursor = MyDB.rawQuery("SELECT place FROM favourites where username = ?", new String[] {usernames});
+        Cursor cursor = MyDB.query(
+                "favourites",
+                projection,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+        if (cursor.getCount() > 0) {
+
+            while (cursor.moveToNext()) {
+                // Retrieve values from the cursor
+                String username = cursor.getString(cursor.getColumnIndexOrThrow("username"));
+
+                String place = cursor.getString(cursor.getColumnIndexOrThrow("place"));
+
+                // Create a User object and add it to the List
+                favItem.add(place);
+            }
+            return favItem;
+        }
+
+        return favItem;
+
+
+    }
 }
 
 

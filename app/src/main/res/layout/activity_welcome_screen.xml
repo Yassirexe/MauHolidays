@@ -11,19 +11,32 @@
         android:background="@drawable/water_fish_1">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Discover"
+            android:textSize="50dp"
+            android:layout_marginTop="230dp"
+            />
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="70dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="290dp"
+            android:text="Mauritius"
+            android:textSize="50dp" />
 
         <Button
             android:layout_width="240dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:id="@+id/welcomebtn"
             android:text="Get Started"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="560dp"
+            android:layout_gravity="bottom|center_horizontal"
             android:background="@drawable/welcomebutton"
+            android:layout_marginBottom="60dp"
             />
     </FrameLayout>
 

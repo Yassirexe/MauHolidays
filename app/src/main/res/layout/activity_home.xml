@@ -38,6 +38,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="30dp"
+                    android:id="@+id/homeusername"
                     android:text="Guest!"
                     android:textColor="#FF6B00"
                     android:textSize="35dp" />
@@ -54,9 +55,9 @@
                 android:textSize="16dp" />
 
             <SearchView
-                android:layout_width="372dp"
+                android:layout_width="340dp"
                 android:layout_height="58dp"
-                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/searchborder"
                 android:theme="@style/CardView.Dark" />
@@ -76,35 +77,35 @@
                     android:orientation="horizontal">
 
 
-                    <LinearLayout
-                        android:layout_width="65dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:layout_marginTop="10dp"
-                        android:orientation="vertical">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="65dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:orientation="vertical">-->
 
-                        <FrameLayout
-                            android:layout_width="65dp"
-                            android:layout_height="60dp"
-                            android:background="@drawable/homeoption"
-                            android:padding="6dp">
+<!--                        <FrameLayout-->
+<!--                            android:layout_width="65dp"-->
+<!--                            android:layout_height="60dp"-->
+<!--                            android:background="@drawable/homeoption"-->
+<!--                            android:padding="6dp">-->
 
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="center_horizontal"
-                                android:src="@drawable/languages" />
+<!--                            <ImageView-->
+<!--                                android:layout_width="50dp"-->
+<!--                                android:layout_height="50dp"-->
+<!--                                android:layout_gravity="center_horizontal"-->
+<!--                                android:src="@drawable/languages" />-->
 
-                        </FrameLayout>
+<!--                        </FrameLayout>-->
 
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="3dp"
-                            android:text="language \ntranslate" />
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginLeft="3dp"-->
+<!--                            android:text="language \ntranslate" />-->
 
-                    </LinearLayout>
+<!--                    </LinearLayout>-->
 
 
                     <LinearLayout
@@ -118,7 +119,9 @@
                             android:layout_width="65dp"
                             android:layout_height="60dp"
                             android:background="@drawable/homeoption"
-                            android:padding="6dp">
+                            android:padding="6dp"
+                            android:clickable="true"
+                            android:id="@+id/goToMap">
 
                             <ImageView
                                 android:layout_width="42dp"
@@ -182,7 +185,9 @@
                             android:layout_height="60dp"
                             android:layout_marginTop="10dp"
                             android:background="@drawable/homeoption"
-                            android:padding="6dp">
+                            android:padding="6dp"
+                            android:clickable="true"
+                            android:id="@+id/goToEmergency">
 
                             <ImageView
                                 android:layout_width="45dp"
@@ -200,34 +205,34 @@
                     </LinearLayout>
 
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
-                        android:orientation="vertical">
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="30dp"-->
+<!--                        android:orientation="vertical">-->
 
-                        <FrameLayout
-                            android:layout_width="65dp"
-                            android:layout_height="60dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/homeoption"
-                            android:padding="6dp">
+<!--                        <FrameLayout-->
+<!--                            android:layout_width="65dp"-->
+<!--                            android:layout_height="60dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:background="@drawable/homeoption"-->
+<!--                            android:padding="6dp">-->
 
-                            <ImageView
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
-                                android:layout_marginLeft="5dp"
-                                android:background="@drawable/cloudy" />
-                        </FrameLayout>
+<!--                            <ImageView-->
+<!--                                android:layout_width="45dp"-->
+<!--                                android:layout_height="45dp"-->
+<!--                                android:layout_marginLeft="5dp"-->
+<!--                                android:background="@drawable/cloudy" />-->
+<!--                        </FrameLayout>-->
 
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:text="Weather" />
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            android:text="Weather" />-->
 
-                    </LinearLayout>
+<!--                    </LinearLayout>-->
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -241,7 +246,8 @@
                             android:layout_height="60dp"
                             android:layout_marginTop="10dp"
                             android:background="@drawable/homeoption"
-                            android:padding="6dp">
+                            android:padding="6dp"
+                            android:id="@+id/goToExchangeRate">
 
                             <ImageView
                                 android:layout_width="45dp"
@@ -289,7 +295,9 @@
                 android:layout_height="120dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/homehotelbg">
+                android:background="@drawable/homehotelbg"
+                android:clickable="true"
+                android:id="@+id/toHotel">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -385,15 +393,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/searchscreen"
-            android:text="Search"
-            android:drawableTop="@drawable/baseline_search_24"
+            android:id="@+id/exploreScreen"
+            android:text="Explore"
+            android:drawableTop="@drawable/baseline_explore_24"
             android:layout_marginLeft="40dp"
-            android:paddingTop="5dp"/>
+            android:paddingTop="5dp"
+            android:clickable="true"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/favscreen"
+            android:id="@+id/favscreen1"
             android:text="Favourites"
             android:drawableTop="@drawable/baseline_favorite_24"
             android:layout_marginLeft="40dp"
@@ -401,7 +411,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/profilescreen"
+            android:id="@+id/profileScreen1"
             android:text="Profile"
             android:drawableTop="@drawable/baseline_account_circle_24"
             android:layout_marginLeft="40dp"
