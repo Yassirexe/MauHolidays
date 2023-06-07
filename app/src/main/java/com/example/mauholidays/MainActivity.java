@@ -12,6 +12,23 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+<<<<<<< Updated upstream
+=======
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.MenuItem;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+import android.os.Bundle;
+import android.view.MenuItem;
+
+>>>>>>> Stashed changes
 public class MainActivity extends AppCompatActivity {
 
     //declare variables
@@ -71,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Password not matching", Toast.LENGTH_SHORT).show();
                     }
                 }
+<<<<<<< Updated upstream
             }
         });
 
@@ -104,6 +122,11 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(MainActivity.this, HelpSetting.class);
                 startActivity(intent);
+=======
+                return false;
+
+
+>>>>>>> Stashed changes
             }
 
         });
@@ -115,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
+<<<<<<< Updated upstream
         });
     }
 }
@@ -128,3 +152,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+=======
+
+
+
+    }
+
+    private SQLiteDatabase getSupportFragmentManager() {
+    }
+
+
+}
+>>>>>>> Stashed changes
