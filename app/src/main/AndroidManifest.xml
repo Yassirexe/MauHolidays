@@ -20,6 +20,7 @@
             android:value="AIzaSyDpQM7U5AUsI8-1scORRRP8IFtqdkZd4Tc" />
 
         <activity
+<<<<<<< Updated upstream
             android:name=".videoMain"
             android:exported="false" />
 
@@ -206,6 +207,12 @@
             android:exported="false" />
         <activity
             android:name=".WelcomeScreen"
+=======
+            android:name=".SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+>>>>>>> Stashed changes
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

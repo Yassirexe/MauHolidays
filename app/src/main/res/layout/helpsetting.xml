@@ -40,45 +40,48 @@
         android:layout_marginTop="140dp"
         android:paddingLeft="20dp"/>
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:src="@drawable/baseline_call_24"
         android:layout_marginTop="175dp"
         android:paddingLeft="20dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
         android:text="Call"
         android:textSize="23dp"
-        android:layout_marginTop="185dp"
+        android:layout_marginTop="175dp"
         android:layout_marginLeft="80dp"
         android:textStyle="bold"/>
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:src="@drawable/baseline_email_24"
-        android:layout_marginTop="225dp"
+        android:layout_marginTop="240dp"
         android:paddingLeft="20dp"/>
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/buttonEmail"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:text="Email"
         android:textSize="23dp"
-        android:layout_marginTop="235dp"
+        android:layout_marginTop="240dp"
         android:layout_marginLeft="80dp"
         android:textStyle="bold"/>
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:src="@drawable/baseline_feedback_24"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="300dp"
         android:paddingLeft="20dp"/>
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/buttonFeedback"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:text="Feedback"
         android:textSize="23dp"
-        android:layout_marginTop="285dp"
+        android:layout_marginTop="300dp"
         android:layout_marginLeft="80dp"
         android:textStyle="bold"/>
 </FrameLayout>

@@ -2,6 +2,7 @@
     <string name="app_name">MauHolidays</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+<<<<<<< Updated upstream
     <string name="title_activity_inter9">inter9</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -20,3 +21,13 @@
         <item>INR-Indian Rupees</item>
     </string-array>
 </resources>
+=======
+
+
+</resources>
+
+
+
+
+
+>>>>>>> Stashed changes

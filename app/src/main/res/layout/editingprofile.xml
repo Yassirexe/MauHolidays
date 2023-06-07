@@ -85,10 +85,15 @@
                 android:layout_marginTop="500dp"
                 android:layout_marginLeft="100dp"
                 android:text="Confirm"
+<<<<<<< HEAD
+                android:background="@drawable/round_back_secondary"
+                android:textStyle="bold"/>
+=======
                 android:textStyle="bold"
                 android:background="@color/blue"
                 android:id="@+id/editSubmit"/>
 
+>>>>>>> 6d0c46f920d4217cf3d4bcfda1d480cff6323f49
         </RelativeLayout>
     </RelativeLayout>
 </FrameLayout>

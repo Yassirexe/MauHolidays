@@ -32,7 +32,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="This software application  MauHolidays App has been developped for mobile devices create by Team B. The Application is virtual tour guide  that can be used interactively. The app contains points of interests,quiz and history about mauritius, descriptions and photos for each specific tour and description of different kind restaurant in Mauritus. Best used to preplan your trip."
+            android:text="This software application  MauHolidays App has been developed for mobile devices created by Team B. The Application is a virtual tour guide  that can be used interactively. The app contains points of interest,quiz and history about Mauritius, descriptions and photos for each specific tour and description of different kinds of restaurant in Mauritius. Best used to pre plan your trip.
+"
             android:layout_marginTop="140dp"
             android:textSize="19dp"
             android:textStyle="bold"
@@ -42,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Contact"
-            android:layout_marginTop="360dp"
+            android:layout_marginTop="370dp"
             android:textSize="25dp"
             android:textStyle="bold"
             android:textColor="@color/black"
@@ -51,8 +52,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Email : MauHolidays@TouristApp.com"
-            android:layout_marginTop="399dp"
-            android:textSize="20dp"
+            android:layout_marginTop="410dp"
+            android:textSize="22dp"
             android:textStyle="bold"
 
             android:layout_marginLeft="19dp"/>
@@ -60,8 +61,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Contact Number: +230 5456 3478"
-            android:layout_marginTop="430dp"
-            android:textSize="20dp"
+            android:layout_marginTop="450dp"
+            android:textSize="23dp"
             android:textStyle="bold"
             android:layout_marginLeft="19dp"/>
 
