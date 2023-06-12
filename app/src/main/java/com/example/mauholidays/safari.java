@@ -22,7 +22,7 @@ public class safari extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nature_park);
+        setContentView(R.layout.activity_safari);
 
         DB = new DBHelper(this);
 
