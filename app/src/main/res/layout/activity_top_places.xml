@@ -97,7 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:background="@drawable/redchurch"
+            android:background="@drawable/red_church"
             />
     </androidx.cardview.widget.CardView>
 
@@ -136,7 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
-            android:background="@drawable/lacroisette"
+            android:background="@drawable/la_croisette"
             />
     </androidx.cardview.widget.CardView>
 

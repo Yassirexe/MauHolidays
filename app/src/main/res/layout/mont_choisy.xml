@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/screenPlaces"
-    tools:context=".laCroisette">
+    tools:context=".mont_choisy">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -19,14 +19,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/la_croisette"
+            android:src="@drawable/mont_choisy"
             />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="La Croisette"
+        android:text="Mont Choisy"
         android:fontFamily="sans-serif-black"
         android:textColor="@color/white"
         android:textSize="22dp"
@@ -88,8 +88,8 @@
         <TextView
             android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:text="Grand Bay La Croisette shopping mall is the biggest mall in the Northern region. It offers a multitude of services and facilities:
-80 shops, 24 restaurants, A cinema of 5 rooms, 1 sports center, A games space for children, A supermarket, A covered parking facility"            android:textAlignment="center"
+            android:text="Mont Choisy exudes perfect harmony between the sparkling water and the whitish sand. Dotted with Casuarina trees, the beach of Mont Choisy attracts Mauritians and tourists. It is not only one of the most beautiful beaches in Mauritius but also the longest one,it provides comfort to each and everyone."
+            android:textAlignment="center"
             android:id="@+id/textContent"
             android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
@@ -108,7 +108,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Grand Bay, Mauritius"
+            android:text="Trou aux Biches"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -131,7 +131,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="07 00 - 00 00"
+            android:text="Always Open"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -154,7 +154,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+230 209 2000"
+            android:text="none"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/black"
             android:textSize="20dp"

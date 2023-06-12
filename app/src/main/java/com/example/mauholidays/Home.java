@@ -75,6 +75,14 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.goToTopPlaces).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, all_top.class);
+                startActivity(intent);
+            }
+        });
+
         findViewById(R.id.goToEmergency).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

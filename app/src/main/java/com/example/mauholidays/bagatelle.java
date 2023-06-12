@@ -17,14 +17,14 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.FileInputStream;
 
-public class caudanwaterfront extends AppCompatActivity {
+public class bagatelle extends AppCompatActivity {
 
     DBHelper DB;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_caudanwaterfront);
+        setContentView(R.layout.bagatelle);
 
         DB = new DBHelper(this);
 
@@ -45,7 +45,7 @@ public class caudanwaterfront extends AppCompatActivity {
         String username = readUsername("username.txt");
         CheckBox fav5 = (CheckBox) findViewById(R.id.favourite5);
 
-        boolean isFav = DB.getInfo(username,"caudan_waterfront-5");
+        boolean isFav = DB.getInfo(username,"bagatelle_mall-4");
         if(isFav) {
             fav5.setChecked(true);
             fav5.setButtonDrawable(R.drawable.baseline_favorite_red);
@@ -59,13 +59,13 @@ public class caudanwaterfront extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(fav5.isChecked()) {
-                    DB.addToFavourite(username,"caudan_waterfront-5");
+                    DB.addToFavourite(username,"bagatelle_mall-4");
                     fav5.setButtonDrawable(R.drawable.heart_red);
-                    Toast.makeText(caudanwaterfront.this, "Added to favourite", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(bagatelle.this, "Added to favourite", Toast.LENGTH_SHORT).show();
                 }else {
-                    DB.removeFromFav(username,"caudan_waterfront-5");
+                    DB.removeFromFav(username,"bagatelle_mall-4");
                     fav5.setButtonDrawable(R.drawable.baseline_favorite_border_24);
-                    Toast.makeText(caudanwaterfront.this, "Removed favourite", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(bagatelle.this, "Removed favourite", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -73,7 +73,7 @@ public class caudanwaterfront extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(caudanwaterfront.this, all_top.class);
+                Intent intent = new Intent(bagatelle.this, all_top.class);
                 startActivity(intent);
             }
         });

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/screenPlaces"
-    tools:context=".laCroisette">
+    tools:context=".bagatelle">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -19,16 +19,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/la_croisette"
+            android:src="@drawable/bagatelle_mall"
             />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="La Croisette"
+        android:text="Bagatelle Mall"
         android:fontFamily="sans-serif-black"
-        android:textColor="@color/white"
+        android:textColor="@color/grey"
         android:textSize="22dp"
         android:layout_above="@+id/imageDescription"
         android:layout_marginBottom="10dp"
@@ -88,8 +88,8 @@
         <TextView
             android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:text="Grand Bay La Croisette shopping mall is the biggest mall in the Northern region. It offers a multitude of services and facilities:
-80 shops, 24 restaurants, A cinema of 5 rooms, 1 sports center, A games space for children, A supermarket, A covered parking facility"            android:textAlignment="center"
+            android:text="This mall is frequented by locals as well as tourists because it has everything under one roof. With its central location in Moka, Bagatelle Mall will make your shopping experience memorable and productive. All the shopaholics won’t get enough of this place owing to the innumerable branded options available for all."
+            android:textAlignment="center"
             android:id="@+id/textContent"
             android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
@@ -108,7 +108,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Grand Bay, Mauritius"
+            android:text="Bagatelle, Mauritius"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -131,7 +131,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="07 00 - 00 00"
+            android:text="08 00 - 22 00"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/black"
             android:textSize="20sp"
@@ -154,7 +154,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+230 209 2000"
+            android:text="+230 460 0707"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/black"
             android:textSize="20dp"

@@ -16,6 +16,15 @@
         android:theme="@style/Theme.MauHolidays"
         tools:targetApi="31">
         <activity
+            android:name=".all_top"
+            android:exported="false" />
+        <activity
+            android:name=".mont_choisy"
+            android:exported="false" />
+        <activity
+            android:name=".bagatelle"
+            android:exported="false" />
+        <activity
             android:name=".all_club"
             android:exported="false" />
         <activity

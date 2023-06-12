@@ -359,9 +359,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/arizonia"
-                    android:text="Transport"
+                    android:text="Top places"
                     android:textColor="@color/white"
-                    android:textSize="50sp" />
+                    android:textSize="50sp"
+                    android:id="@+id/goToTopPlaces"/>
             </FrameLayout>
 
 
