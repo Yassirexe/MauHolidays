@@ -71,7 +71,7 @@ public class club_kenzi extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(club_kenzi.this, all_nature.class);
+                Intent intent = new Intent(club_kenzi.this, all_club.class);
                 startActivity(intent);
             }
         });

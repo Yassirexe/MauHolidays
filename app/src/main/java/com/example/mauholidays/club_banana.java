@@ -71,7 +71,7 @@ public class club_banana extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(club_banana.this, all_nature.class);
+                Intent intent = new Intent(club_banana.this, all_club.class);
                 startActivity(intent);
             }
         });

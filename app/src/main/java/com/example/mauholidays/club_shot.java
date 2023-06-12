@@ -16,13 +16,13 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.FileInputStream;
 
-public class club_insomnia extends AppCompatActivity {
+public class club_shot extends AppCompatActivity {
 
     DBHelper DB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.club_insomnia);
+        setContentView(R.layout.club_shot);
 
         DB = new DBHelper(this);
 
@@ -43,7 +43,7 @@ public class club_insomnia extends AppCompatActivity {
         String username = readUsername("username.txt");
         CheckBox fav5 = (CheckBox) findViewById(R.id.favourite5);
 
-        boolean isFav = DB.getInfo(username,"insomnia-3");
+        boolean isFav = DB.getInfo(username,"shotz_night-4");
         if(isFav) {
             fav5.setChecked(true);
             fav5.setButtonDrawable(R.drawable.baseline_favorite_red);
@@ -57,13 +57,13 @@ public class club_insomnia extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(fav5.isChecked()) {
-                    DB.addToFavourite(username,"insomnia-3");
+                    DB.addToFavourite(username,"shotz_night-4");
                     fav5.setButtonDrawable(R.drawable.heart_red);
-                    Toast.makeText(club_insomnia.this, "Added to favourite", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(club_shot.this, "Added to favourite", Toast.LENGTH_SHORT).show();
                 }else {
-                    DB.removeFromFav(username,"insomnia-3");
+                    DB.removeFromFav(username,"shotz_night-4");
                     fav5.setButtonDrawable(R.drawable.baseline_favorite_border_24);
-                    Toast.makeText(club_insomnia.this, "Removed favourite", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(club_shot.this, "Removed favourite", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -71,7 +71,7 @@ public class club_insomnia extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(club_insomnia.this, all_club.class);
+                Intent intent = new Intent(club_shot.this, all_club.class);
                 startActivity(intent);
             }
         });
