@@ -191,7 +191,7 @@
             android:id="@+id/casela"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/casela1"
+            android:background="@drawable/casela_safari"
             />
     </androidx.cardview.widget.CardView>
 

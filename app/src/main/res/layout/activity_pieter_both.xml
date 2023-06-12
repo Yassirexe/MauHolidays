@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pieterBoth">
+    tools:context=".leMorne">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         app:cardCornerRadius="25dp">
 
         <ImageView
-            android:id="@+id/pieterBothMountain"
+            android:id="@+id/leMorne"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pieter Both Mountain"
+        android:text="Pieter Both"
         android:fontFamily="sans-serif-black"
         android:textColor="@color/white"
         android:textSize="22dp"
@@ -32,11 +32,10 @@
         android:layout_marginStart="20dp"
         />
 
-    <ImageButton
+    <CheckBox
         android:id="@+id/favourite5"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:background="@drawable/baseline_favorite_border_24"
         android:layout_marginTop="410dp"
         android:layout_marginStart="360dp"
         />

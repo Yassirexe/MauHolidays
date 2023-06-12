@@ -54,7 +54,15 @@ public class Home extends AppCompatActivity {
         findViewById(R.id.toHotel).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, leMorne.class);
+                Intent intent = new Intent(Home.this, all_hotel.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.toNature).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, all_nature.class);
                 startActivity(intent);
             }
         });

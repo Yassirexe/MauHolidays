@@ -32,10 +32,10 @@ public class leMorne extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!fav5.isChecked()) {
-                    DB.removeFromFav(username,"lemorne_3");
+                    DB.removeFromFav(username,"le_morne-3");
                     fav5.setButtonDrawable(R.drawable.baseline_favorite_border_24);
                 }else {
-                    DB.addToFavourite(username,"lemorne_3");
+                    DB.addToFavourite(username,"le_morne-3");
                     fav5.setButtonDrawable(R.drawable.heart_red);
                 }
             }
@@ -44,7 +44,7 @@ public class leMorne extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(leMorne.this, Home.class);
+                Intent intent = new Intent(leMorne.this, all_nature.class);
                 startActivity(intent);
             }
         });

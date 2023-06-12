@@ -15,15 +15,59 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MauHolidays"
         tools:targetApi="31">
+        <activity
+            android:name=".club_kenzi"
+            android:exported="false" />
+        <activity
+            android:name=".club_lakaz"
+            android:exported="false" />
+        <activity
+            android:name=".club_banana"
+            android:exported="false" />
+        <activity
+            android:name=".club_insomnia"
+            android:exported="false" />
+        <activity
+            android:name=".club_omg"
+            android:exported="false" />
+        <activity
+            android:name=".all_nature"
+            android:exported="false" />
+        <activity
+            android:name=".black_river"
+            android:exported="false" />
+        <activity
+            android:name=".nature_park"
+            android:exported="false" />
+        <activity
+            android:name=".hotel_sofitel"
+            android:exported="false" />
+        <activity
+            android:name=".hotel_outrigger"
+            android:exported="false" />
+        <activity
+            android:name=".hotel_amber"
+            android:exported="false" />
+        <activity
+            android:name=".all_hotel"
+            android:exported="false" />
+        <activity
+            android:name=".hotel_maritim"
+            android:exported="false" />
+        <activity
+            android:name=".hotel_mariotte"
+            android:exported="false" />
+        <activity
+            android:name=".hotel_preski"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDpQM7U5AUsI8-1scORRRP8IFtqdkZd4Tc" />
 
         <activity
-<<<<<<< Updated upstream
             android:name=".videoMain"
             android:exported="false" />
-
         <activity
             android:name=".map"
             android:exported="false" />
@@ -95,8 +139,7 @@
             android:exported="false" />
         <activity
             android:name=".Favourite"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".signup"
             android:exported="false" />
@@ -207,12 +250,6 @@
             android:exported="false" />
         <activity
             android:name=".WelcomeScreen"
-=======
-            android:name=".SplashScreen"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
->>>>>>> Stashed changes
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -221,10 +258,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
     </application>
 

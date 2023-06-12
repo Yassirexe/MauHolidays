@@ -314,14 +314,16 @@
                 android:layout_height="120dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/beacheshomecat">
+                android:background="@drawable/beacheshomecat"
+                android:clickable="true"
+                android:id="@+id/toNature">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/arizonia"
-                    android:text="Beaches"
+                    android:text="Nature"
                     android:textColor="@color/white"
                     android:textSize="50sp" />
             </FrameLayout>

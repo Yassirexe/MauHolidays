@@ -2,6 +2,7 @@ package com.example.mauholidays;
 
 import static android.content.ContentValues.TAG;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -116,65 +117,68 @@ public class DBHelper extends SQLiteOpenHelper {
     public void removeFromFav(String username, String place) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
 
-        String tableName = "favourites";
-        String columnValue = "value_to_match";
+        // Define the WHERE clause and its arguments
+        String whereClause = "username = ? AND place = ?";
+        String[] whereArgs = {username, place};
 
-// Build the WHERE clause
-        String selection =  "username = ? and place = ?";
-        String[] selectionArgs = { username, place };
+        // Perform the deletion
+        MyDB.delete("favourites", whereClause, whereArgs);
 
-// Perform the deletion
-        int deletedRows = MyDB.delete(tableName, selection, selectionArgs);
-
-// Check the number of deleted rows
-        if (deletedRows > 0) {
-
-            Log.i(TAG, "removeFromFav: Removed");
-        } else {
-            Log.i(TAG, "No item removed!");
-        }
-
-// Close the database connection
+        // Close the database
         MyDB.close();
 
     }
 
     public ArrayList<String> getFavourite(String usernames) {
         ArrayList<String> favItem = new ArrayList<>();
-        favItem.add(" ");
+//        SQLiteDatabase MyDB = this.getWritableDatabase();
+//        String[] columns = {"place"};
+//
+//        String selection = "username = ?";
+//        String[] selectionArgs = {usernames};
+//
+//        Cursor cursor = MyDB.query("favourites", columns, selection, selectionArgs, null, null, null);
+//
+//        if (cursor != null) {
+//            if (cursor.moveToFirst()) {
+//                do {
+//                    String selectedValue = cursor.getString(cursor.getColumnIndex("place"));
+//                    favItem.add(selectedValue);
+//                } while (cursor.moveToNext());
+//            }
+//            cursor.close();
+//        }
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        String[] projection = {
-                "username",
-                "place"
-        };
-        //Cursor cursor = MyDB.rawQuery("SELECT place FROM favourites where username = ?", new String[] {usernames});
-        Cursor cursor = MyDB.query(
-                "favourites",
-                projection,
-                null,
-                null,
-                null,
-                null,
-                null
-        );
-        if (cursor.getCount() > 0) {
+        Cursor cursor = MyDB.rawQuery("Select place from favourites where username = ?", new String[]{usernames});
 
-            while (cursor.moveToNext()) {
-                // Retrieve values from the cursor
-                String username = cursor.getString(cursor.getColumnIndexOrThrow("username"));
+        favItem.add(" ");
+        if (cursor.moveToFirst()){
+            do {
+                // Passing values
+                String column1 = cursor.getString(0);
+                favItem.add(column1);
 
-                String place = cursor.getString(cursor.getColumnIndexOrThrow("place"));
-
-                // Create a User object and add it to the List
-                favItem.add(place);
-            }
-            return favItem;
+            } while(cursor.moveToNext());
         }
+        cursor.close();
+        MyDB.close();
 
         return favItem;
+    }
+
+    public boolean getInfo(String usernames, String place) {
+
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        Cursor cursor = MyDB.rawQuery("Select place from favourites where username = ? and place = ?", new String[]{usernames, place});
+
+        if (cursor.getCount() > 0)
+            return true;
+        else
+            return false;
 
 
     }
+
 }
 
 

@@ -200,7 +200,7 @@
             android:id="@+id/caudan"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/caudan"
+            android:background="@drawable/caudan_waterfront"
             />
     </androidx.cardview.widget.CardView>
 
@@ -240,7 +240,7 @@
             android:layout_width="190dp"
             android:layout_height="215dp"
             android:scaleType="centerCrop"
-            android:background="@drawable/casela1"
+            android:background="@drawable/casela_safari"
             />
     </androidx.cardview.widget.CardView>
 
