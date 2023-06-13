@@ -2,44 +2,29 @@ package com.example.mauholidays;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-
-<<<<<<< HEAD
-
-import android.annotation.SuppressLint;
-import android.content.Intent;
-=======
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.res.ColorStateList;
->>>>>>> a8f268d5d5de6fae3990eff5f598c7c795457dec
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
-<<<<<<< HEAD
-import android.os.Bundle;
-
-
-public class screen345 extends AppCompatActivity {
-
-        private Button b1;
-    @SuppressLint("MissingInflatedId")
-
-=======
 import android.widget.ScrollView;
 import android.widget.Toast;
 
+
 public class screen345 extends AppCompatActivity {
+
     private Button b1;
->>>>>>> a8f268d5d5de6fae3990eff5f598c7c795457dec
+    @SuppressLint("MissingInflatedId")
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen345);
-<<<<<<< HEAD
+
 
         findViewById(R.id.nextButton).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,8 +37,7 @@ public class screen345 extends AppCompatActivity {
 
 
 
-=======
->>>>>>> a8f268d5d5de6fae3990eff5f598c7c795457dec
+
         b1 = findViewById(R.id.quizsubmit);
         ScrollView scrollView = findViewById(R.id.scrollView3);
 
@@ -167,9 +151,5 @@ public class screen345 extends AppCompatActivity {
 
         });
 
-<<<<<<< HEAD
-
-=======
->>>>>>> a8f268d5d5de6fae3990eff5f598c7c795457dec
     }
 }

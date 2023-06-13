@@ -34,7 +34,7 @@ public class SettingPage extends AppCompatActivity {
     EditText username, password, repassword;
     Button signup, signin, Edit;
     DBHelper DB;
-    ImageView privacy, helpsetting, about,logout;
+    ImageView privacy, helpsetting, about;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -43,11 +43,11 @@ public class SettingPage extends AppCompatActivity {
         setContentView(R.layout.settingpage);
 
         //initialise variables
-        username = (EditText) findViewById(R.id.username);
-        password = (EditText) findViewById(R.id.password);
-        repassword = (EditText) findViewById(R.id.repassword);
-        signup = (Button) findViewById(R.id.btnsignup);
-        signin = (Button) findViewById(R.id.btnsignin);
+//        username = (EditText) findViewById(R.id.username);
+//        password = (EditText) findViewById(R.id.password);
+//        repassword = (EditText) findViewById(R.id.repassword);
+//        signup = (Button) findViewById(R.id.btnsignup);
+//        signin = (Button) findViewById(R.id.btnsignin);
         Edit = (Button) findViewById(R.id.buttonEdit);
         privacy = (ImageView) findViewById(R.id.buttonPrivacy);
         helpsetting = (ImageView) findViewById(R.id.buttonHelp);
@@ -98,18 +98,18 @@ public class SettingPage extends AppCompatActivity {
             }
 
         });
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                logout();
-            }
-            private void logout() {
-                Intent intent = new Intent(SettingPage.this,LogOut.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+//        logout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                logout();
+//            }
+//            private void logout() {
+//                Intent intent = new Intent(SettingPage.this,LogOut.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
 //        logout
         findViewById(R.id.buttonLogout).setOnClickListener(new View.OnClickListener() {
             @Override
