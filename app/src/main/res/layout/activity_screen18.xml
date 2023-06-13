@@ -64,6 +64,20 @@
     </ImageView>
 
 
+    <ScrollView
+        android:id="@+id/scrollView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+
+
     <TextView
         android:text="By far one of the popular monuments in Mauritius, Aapravasi Ghat, which directly translates to “Immigration Depot”, where indentured labourers from India were sent as they arrived on the island. Situated right by the sea in the capital city of Port Louis, the site today has been declared a UNESCO World Heritage Site and contains the remains of the buildings that formed the complex used for indentured labourers during British colonial rule. There is also an interpretation centre and guided tours are offered (and highly recommended) in order for visitors to fully understand the significance of this site which saw some 500 000 indentured labourers in total pass through it between 1850 and 1923, to be used as labourers in British colonies and on the sugar plantations in Mauritius. It is said that the ancestors of around 70% of the country’s population today arrived through this immigration depot. It’s a hugely significant site and well worth a visit."
         android:layout_marginTop="305dp"
@@ -99,6 +113,9 @@
         android:textSize="15dp"
         />
 
+    </RelativeLayout>
+
+    </ScrollView>
 
 
 </FrameLayout>

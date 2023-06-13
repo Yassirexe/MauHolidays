@@ -61,6 +61,19 @@
     </ImageView>
 
 
+    <ScrollView
+        android:id="@+id/scrollView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+
 
     <TextView
         android:text="This military building, which also goes by the name Fort Adelaide, was built in the 19th century by the British to protect the British Army. It was interestingly constructed in a Moorish style and is a hugely popular site today given its unbelievable panoramic views of Port Louis and the harbour. You will get many souvenir shops nearby which once served as barracks of the fort.It was named after the wife of William II when the British held land in Port Louis. Now the fort has been converted into a National monument of Mauritius. Surrounding the fort is also the Caudan Waterfront and the vast Indian Ocean. Fort Citadel remains a popular tourist destination and it provides stunning views of the city.
@@ -99,7 +112,8 @@
         android:textSize="15dp"
         />
 
+    </RelativeLayout>
 
-
+    </ScrollView>
 
 </FrameLayout>

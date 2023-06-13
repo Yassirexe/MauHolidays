@@ -3,6 +3,7 @@ package com.example.mauholidays;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +18,23 @@ public class screen789 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen789);
+
+
+        findViewById(R.id.nextButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(screen789.this,screen10.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
+
+
+
         b1 = findViewById(R.id.quizsubmit);
 
         b1.setOnClickListener(new View.OnClickListener() {

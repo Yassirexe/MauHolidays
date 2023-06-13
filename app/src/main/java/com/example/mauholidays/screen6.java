@@ -16,7 +16,7 @@ public class screen6 extends AppCompatActivity {
         findViewById(R.id.nextButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(screen6.this,screen7.class);
+                Intent intent = new Intent(screen6.this,screen789.class);
                 startActivity(intent);
             }
         });

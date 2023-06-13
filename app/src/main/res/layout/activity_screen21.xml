@@ -64,6 +64,20 @@
     </ImageView>
 
 
+
+    <ScrollView
+        android:id="@+id/scrollView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+
     <TextView
         android:text="The British came across one of these fortresses during a fierce battle at Mortella Bay in Corsica in 1794. The tower was manned by the French who had mounted cannons on the roof top. The British were so impressed that they decided there and then to build similar towers to protect their empire as they were worried about a French insurrection.They  decided to build 5 of these fortresses alongside the West coast to protect the island. The coastal batteries were erected at strategic locations near river mouths.Royal engineers were commissioned together with skilled stone cutters from India and carpenters. Their task was to erect sand dunes called batteries in front of the towers.It turned out the towers never saw any action and were abandoned."
         android:layout_marginTop="350dp"
@@ -99,6 +113,8 @@
         android:textSize="15dp"
         />
 
+    </RelativeLayout>
 
+    </ScrollView>
 
 </FrameLayout>

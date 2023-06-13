@@ -65,6 +65,20 @@
     </ImageView>
 
 
+    <ScrollView
+        android:id="@+id/scrollView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+
+
     <TextView
         android:text="Another hugely significant historical monument in Mauritius, Le Morne Brabant, the iconic mountain a short distance from the popular Le Morne Beach in the southwest of the island, was said to have been a safe haven for runaway slaves that had managed to escape their incarceration. It is said that they set up small communities and lived in caves until slavery was abolished when a very sad event took place here. The mountain today is seen as a symbol of hope and freedom and it has been named a UNESCO World Heritage site. You can hike the mountain with a guide or simply visit it, where the memorial at its foot gives some insight into the significance of this site."
         android:layout_marginTop="330dp"
@@ -100,7 +114,8 @@
         android:textSize="15dp"
         />
 
+    </RelativeLayout>
 
-
+    </ScrollView>
 
 </FrameLayout>

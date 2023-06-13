@@ -38,6 +38,21 @@
         android:layout_marginTop="110dp"
         android:layout_gravity="center_horizontal"/>
 
+
+    <ScrollView
+        android:id="@+id/scrollView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+
+
     <TextView
         android:text="In 1598, a Dutch squadron, under the orders of Admiral Wybrand Van Warwyck, landed at Grand Port and named the island 'Mauritius', in honour of Prince Maurice Van Nassau, Stathouder of Holland."
         android:layout_marginTop="130dp"
@@ -94,7 +109,9 @@
         android:textSize="15dp"
         />
 
+    </RelativeLayout>
 
+    </ScrollView>
 
 
 

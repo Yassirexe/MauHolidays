@@ -41,6 +41,21 @@
         android:layout_gravity="center_horizontal"/>
 
 
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+
+
+
     <TextView
         android:text="The island had remained unknown and uninhabited for a long time .It was visited by Arab sailors during the Middle Ages, and on maps
 of about 1500, it is shown by an Arabic name `Dina Arobi'."
@@ -98,6 +113,8 @@ of about 1500, it is shown by an Arabic name `Dina Arobi'."
         />
 
 
+    </RelativeLayout>
 
+    </ScrollView>
 
 </FrameLayout>
