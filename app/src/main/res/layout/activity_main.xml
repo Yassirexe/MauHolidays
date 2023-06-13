@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="50dp"
-    tools:context=".MainActivity"
+    tools:context=".main"
     android:background="@drawable/create_acc_"
     >
 
@@ -78,5 +78,6 @@
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
         android:text="Sign in" />
+
 
 </RelativeLayout>

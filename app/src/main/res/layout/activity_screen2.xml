@@ -113,8 +113,11 @@ of about 1500, it is shown by an Arabic name `Dina Arobi'."
         />
 
 
+<<<<<<< HEAD
     </RelativeLayout>
 
     </ScrollView>
 
+=======
+>>>>>>> a8f268d5d5de6fae3990eff5f598c7c795457dec
 </FrameLayout>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".all_top">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="366dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/baseline_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="back"/>
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="325dp"
+        android:background="@drawable/baseline_person_outline_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="go to profile"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:text="Top places"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:id="@+id/red">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="190dp"
+                    android:layout_height="215dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/red_church"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Red Church"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/baseline_favorite_border_24"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/croissette"
+                android:clickable="true"
+                android:layout_marginLeft="210dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="190dp"
+                    android:layout_height="215dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/la_croisette"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="La Croisette"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/baseline_favorite_border_24"
+                    android:layout_marginTop="205dp"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+            </RelativeLayout>
+
+            <!--            second row-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/red"
+                android:id="@+id/caudan"
+                android:clickable="true"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="190dp"
+                    android:layout_height="215dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/caudan_waterfront"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caudan Waterfall"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/baseline_favorite_border_24"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/croissette"
+                android:id="@+id/sitar"
+                android:layout_marginStart="210dp"
+                android:clickable="true"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="190dp"
+                    android:layout_height="215dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/sitar"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sitar"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/baseline_favorite_border_24"
+                    android:layout_marginTop="205dp"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+            </RelativeLayout>
+
+            <!--            third row-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/caudan"
+                android:id="@+id/baga"
+                android:clickable="true"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="190dp"
+                    android:layout_height="215dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/bagatelle_mall"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bagatelle Mall"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/baseline_favorite_border_24"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sitar"
+                android:id="@+id/choisy"
+                android:clickable="true"
+                android:layout_marginStart="210dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="190dp"
+                    android:layout_height="215dp"
+                    app:cardElevation="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/mont_choisy"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mont Choisy"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="15dp"
+                    />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/baseline_favorite_border_24"
+                    android:layout_marginTop="205dp"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginEnd="5dp"
+                    />
+
+            </RelativeLayout>
+
+            <!--            forth row-->
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/top_border"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_gravity="bottom">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/homescreen1"
+            android:text="Home"
+            android:drawableTop="@drawable/baseline_home_24"
+            android:layout_marginLeft="40dp"
+            android:paddingTop="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exploreScreen"
+            android:text="Explore"
+            android:drawableTop="@drawable/baseline_explore_24"
+            android:layout_marginLeft="40dp"
+            android:paddingTop="5dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/favscreen1"
+            android:text="Favourites"
+            android:drawableTop="@drawable/baseline_favorite_24"
+            android:layout_marginLeft="40dp"
+            android:paddingTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileScreen1"
+            android:text="Profile"
+            android:drawableTop="@drawable/baseline_account_circle_24"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="40dp"
+            android:paddingTop="5dp"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

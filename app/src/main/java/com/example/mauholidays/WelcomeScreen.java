@@ -17,12 +17,10 @@ public class WelcomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_welcome_screen);
 
         welcomebtn = findViewById(R.id.welcomebtn);
-        welcomebtn.setBackgroundColor(Color.RED);
-
         welcomebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(WelcomeScreen.this,MainActivity.class);
+                Intent intent = new Intent(WelcomeScreen.this,signup.class);
                 startActivity(intent);
             }
         });

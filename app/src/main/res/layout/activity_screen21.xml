@@ -60,8 +60,8 @@
         android:layout_marginTop="165dp"
         android:layout_marginStart="90dp"
 
-        >
-    </ImageView>
+        />
+
 
 
 

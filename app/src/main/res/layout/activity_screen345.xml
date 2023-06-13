@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+=======
+
+>>>>>>> a8f268d5d5de6fae3990eff5f598c7c795457dec
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -78,12 +82,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/question1"
-                android:layout_below="@+id/q1quiztext">
+                android:layout_below="@+id/q1quiztext"
+                >
 
                 <RadioButton
                     android:id="@+id/first"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
+                    android:buttonTint="@color/black"
                     android:layout_marginStart="10dp"
                     android:text="Mascarene Islands"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
@@ -100,8 +106,7 @@
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textSize="15sp"
-
-
+                    android:buttonTint="@color/black"
                     />
 
 
@@ -113,7 +118,9 @@
                     android:text="St Brandon"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:buttonTint="@color/black"
+                    />
 
                 <RadioButton
                     android:id="@+id/fourth"
@@ -123,7 +130,9 @@
                     android:text="Dina Arobi"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:buttonTint="@color/black"
+                    />
             </RadioGroup>
 
 
@@ -147,7 +156,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/question2text"
-                android:id="@+id/question2">
+                android:id="@+id/question2"
+                >
 
                 <RadioButton
                     android:id="@+id/mascarene"
@@ -157,7 +167,7 @@
                     android:text="Don Pedro"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textSize="15sp"
-
+                    android:buttonTint="@color/black"
                     />
 
                 <RadioButton
@@ -169,7 +179,7 @@
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textSize="15sp"
-
+                    android:buttonTint="@color/black"
 
                     />
 
@@ -182,7 +192,9 @@
                     android:text="Bruno Fernandes"
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:buttonTint="@color/black"
+                    />
 
                 <RadioButton
                     android:id="@+id/brandon"
@@ -193,6 +205,7 @@
                     android:textAlignment="viewStart"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textSize="15sp"
+                    android:buttonTint="@color/black"
 
                     />
             </RadioGroup>
@@ -226,6 +239,7 @@
                     android:layout_marginStart="10dp"
                     android:textSize="15sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
 
                     />
 
@@ -237,6 +251,8 @@
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+
 
 
                     />
@@ -249,7 +265,9 @@
                     android:layout_marginStart="10dp"
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+                    />
 
                 <RadioButton android:id="@+id/D"
                     android:layout_width="wrap_content"
@@ -259,6 +277,7 @@
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
 
                     />
 
@@ -295,6 +314,7 @@
                     android:layout_marginStart="10dp"
                     android:textSize="15sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
 
                     />
 
@@ -306,6 +326,7 @@
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
 
 
                     />
@@ -318,7 +339,9 @@
                     android:layout_marginStart="10dp"
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+                    />
 
                 <RadioButton android:id="@+id/four"
                     android:layout_width="wrap_content"
@@ -328,6 +351,7 @@
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
 
                     />
 
@@ -364,6 +388,7 @@
                     android:layout_marginStart="10dp"
                     android:textSize="15sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
                     />
 
                 <RadioButton
@@ -375,6 +400,7 @@
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
                     />
 
 
@@ -387,7 +413,9 @@
                     android:layout_marginStart="10dp"
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:buttonTint="@color/black"
+                    />
 
                 <RadioButton
                     android:id="@+id/questionfived"
@@ -398,7 +426,7 @@
                     android:textAlignment="viewStart"
                     android:textSize="15sp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-
+                    android:buttonTint="@color/black"
                     />
 
             </RadioGroup>
@@ -411,10 +439,20 @@
                 android:layout_centerHorizontal="true"
                 android:id="@+id/quizsubmit"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/quizsubmit">
+
+            </LinearLayout>
+
         </RelativeLayout>
 
     </ScrollView>
 
 </LinearLayout>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a8f268d5d5de6fae3990eff5f598c7c795457dec
