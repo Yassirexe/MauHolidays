@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".screen1"
     android:background="@drawable/homebg">
 
@@ -40,50 +41,42 @@
         android:layout_gravity="center_horizontal"/>
 
 
-
-
-
-
-
-    <Button
-        android:id="@+id/history"
+    <androidx.cardview.widget.CardView
         android:layout_width="160dp"
         android:layout_height="160dp"
+        android:layout_marginStart="125dp"
         android:layout_marginTop="200dp"
-        android:layout_marginStart="125dp"
-        android:background="@drawable/group_1"
-        android:paddingTop="90dp"
-        android:textColor="@color/white"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="25dp"
+        android:id="@+id/brain">
+
+        <Button
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/brain2"
+            android:textColor="@color/black"
+            />
+
+    </androidx.cardview.widget.CardView>
 
 
-        />
-
-
-    <Button
-        android:id="@+id/publicHolidays"
+    <androidx.cardview.widget.CardView
         android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="400dp"
+        android:layout_height="165dp"
         android:layout_marginStart="125dp"
-        android:backgroundTint="@color/material_dynamic_primary50"
-        android:paddingTop="90dp"
-        android:textColor="@color/white"
-        android:text="Learn More" />
+        android:layout_marginTop="400dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="25dp"
+        android:id="@+id/learn_to_sink">
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/learn_to_sink"
+            android:textColor="@color/black"
+            />
 
-    <Button
-        android:id="@+id/nextButton"
-        android:layout_width="80dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="660dp"
-        android:layout_marginStart="310dp"
-        android:backgroundTint="@color/material_dynamic_primary95"
-        android:textColor="@color/black"
-        android:text="Next"
-        android:textSize="15dp"
-        />
-
-
-
+    </androidx.cardview.widget.CardView>
 
 </FrameLayout>
